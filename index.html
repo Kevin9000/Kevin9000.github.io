@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Responsive settings-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>My Portfolio</title>
+    <!-- Main css file-->
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <!-- main javascript file-->
+    <script src="js/mainJS.js"></script>
+</head>
+
+<body id="home">
+    <!-- Navigation-->
+    <div id="topnav">
+        <i>Navbar</i>
+        <div class="element">
+            <a class="topNav_ref" href="#contacts_section">Contacts</a>
+            <a class="topNav_ref" href="#projects_section">Projects</a>
+            <a class="topNav_ref" href="#about_me_section">About</a>
+            <a class="topNav_ref" href="#home">Home</a>
+        </div>
+
+        <button id="opennavbtn" onclick="buttonNavClick()">&#9776</button>
+
+        <!-- Hidden Navigation Sub Bar-->
+        <div class="subNavBar" id="subNavBar">
+            <a href="#home">Home</a>
+            <a href="#about_me_section">About</a>
+            <a href="#projects_section">Projects</a>
+            <a href="#contacts_section">Contacts</a>
+        </div>
+    </div>
+
+    <!-- Side Navigation bar -->
+    <div class="sideBar">
+        <h6> Follow Me </h6>
+        <br>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/kevin-wang-83ab931b1" target="_blank">
+                <text class="sidenav-text"> LinkedIn </text>
+                <img src="img/linkedin.png" alt="Error Loading Image">
+            </a>
+        </div>
+        <br>
+        <div class="github">
+            <a href="https://github.com/Kevin9000" target="_blank">
+                <text class="sidenav-text"> GitHub </text>
+                <img src="img/github.png" alt="Error Loading Image">
+            </a>
+        </div>
+        <br>
+        <div class="email">
+            <a href="#contacts">
+                <text class="sidenav-text"> E-Mail </text>
+                <img src="img/email.png" alt="Error Loading Image">
+            </a>
+        </div>
+        <br>
+        <div class="resume">
+            <a href="resources/curriculum.pdf" target="_blank">
+                <text class="sidenav-text"> Resume </text>
+                <img src="img/resume.png" alt="Error Loading Image">
+            </a>
+        </div>
+    </div>
+
+    <!-- Distanciate the div of main component from the top navbar -->
+    <div class="mainStartText">
+        <h1><b> Hello, this is Kevin Wang </b></h1>
+        <h2><b> A passionate Web Developer <br> eager to learn new technologies </b></h2>
+    </div>
+    <!-- Container where lays all the main components -->
+    <div id="mainComponent">
+        <!-- Info about me section -->
+        <div id="about_me_section">
+            <p class="elementTitle" id="about_me_title">About me</p>
+            <p class="description">Enthusiastic Student in software development eager to contribute to team success
+                through hard work,
+                attention to detail and excellent organizational skills. Motivated to learn, grow and excel in web
+                development skills and technologies.</p>
+        </div>
+        <!-- Info about my most important Projects -->
+        <div id="projects_section">
+            <p class="elementTitle" id="projects_title">Projects</p>
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="" alt="Error Loading Image">
+                <div class="description">
+                    <p class="title_project">
+                        Enigma Machine
+                    </p>
+                    <p class="tech_desciption_projects">
+                        Python
+                    </p>
+                    <p class="description_project">
+                        - Developed software in python that simulates the functionality of the Enigma Machine used in the WW2
+                        - Implemented an user-friendly UI, that greatly improves the UX
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="" alt="Error Loading Image">
+                <div class="description">
+                    <p class="title_project">
+                        Falling Ball
+                    </p>
+                    <p class="tech_desciption_projects">
+                        Java
+                    </p>
+                    <p class="description_project">
+                        - Designed and developed a full life-cycle Java game with an user friendly UI
+                        - Implemented a server that has the functionality to:
+                        1 - respond the various request of the client
+                        2 - store and manage data of the client
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="" alt="Error Loading Image">
+                <div class="description">
+                    <p class="title_project">
+                        Line Follower Arduino
+                    </p>
+                    <p class="tech_desciption_projects">
+                        Arduino
+                    </p>
+                    <p class="description_project">
+                        - Led a team of software developer to build a clean and organized code.
+                        - Designed and built a car, and developed embedded system using the Arduino micro-controller board.
+                        - Designed, developed and implemented an Arduino software that has the capability to:
+                        1- Retrieve and analyze data from the QTR-8A and HC-SR04 sensors.
+                        2- Manage the power of the rotors to control the car movements
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section that contain my personal contact info and a form to send an email directly -->
+        <div id="contacts_section">
+            <p class="elementTitle" id="contacts_title">Contacts</p>
+
+            <div id="contact_description">
+                <div id="contact_form">
+                    <form action="php/myPhp.php" method="post">
+                        <label for="fname">Name</label> <br>
+                        <input name="name" type="text" class="form_input" id="fname" placeholder="Insert Your Name" required>
+                        <br><br>
+                        <label for="femail">E-Mail</label> <br>
+                        <input name="email" type="email" class="form_input" id="femail" placeholder="Insert Your E-Mail" required>
+                        <br><br>
+                        <label for="fmessage">Message</label> <br>
+                        <textarea name="message" rows="10" class="form_input" id="fmessage" required></textarea>
+                        <br><br>
+                        <input type="submit" class="form_input submit_button" value="SEND MESSAGE">
+                    </form>
+                </div>
+                <div id="contact_info">
+                    <p>
+                        <b>Phone:</b>&nbsp&nbsp&nbsp +393202166916
+                    </p>
+                    <p>
+                        <b>E-Mail:</b>&nbsp&nbsp&nbsp kevinwang9000@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Distanciate the div of main component from the bottom -->
+    <br><br><br>
+
+</body>
+
+</html>
