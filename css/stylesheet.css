@@ -275,15 +275,42 @@ body {
 
 .project {
     display: flex;
+    padding: 20px 40px;
 }
 
-.project img{
+.project_img{
     display: inline-block;
-    background-color: #018d06;
+    width: 10em;
+    height: 5em;
 }
 
-.project .description{
-    display: inline-block;
+.project_info{
+    width: 100%;
+    margin: 0px;
+    padding-left: 30px;
+}
+
+.project_info .title_project{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.project_info .technology_used{
+    font-weight: bold;
+    padding: 15px 15px; 
+}
+
+.project_info .project_description {
+    font-size: 1em;
+}
+
+.project_info .utility_button {
+    padding-top: 30px;
+}
+
+.project_info .utility_button button {
+    width: 7em;
+    height: 3em;
 }
 
 #contacts_section {
