@@ -17,6 +17,12 @@
 
     --projects-bg-color: #b89595;
     --projects-fg-color: #000000;
+    --project-text-shadow-length: 5px;
+
+    --project-button-default-opacity: 0.3;
+    --project1-button-bg: 43,88,207;
+    --project2-button-bg: 43,207,80;
+    --project3-button-bg: 241,192,78;
 
     --contacts-bg-color: #9c9c9c;
     --contacts-fg-color: #000000;
@@ -287,7 +293,7 @@ body {
 .project_info{
     width: 100%;
     margin: 0px;
-    padding-left: 30px;
+    padding-left: 5em;
 }
 
 .project_info .title_project{
@@ -309,8 +315,42 @@ body {
 }
 
 .project_info .utility_button button {
-    width: 7em;
-    height: 3em;
+    width: 7.5em;
+    height: 3.0em;
+    font-size: 1.0em;
+    color: white;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+}
+
+.project_info .utility_button button:hover {
+    border-radius: 50px;
+    text-shadow: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 1);
+}
+
+#project1_buttons button {
+    background: rgba(var(--project1-button-bg), var(--project-button-default-opacity));
+}
+
+#project1_buttons button:hover {
+    background: rgba(var(--project1-button-bg), 1);
+}
+
+#project2_buttons button {
+    background: rgba(var(--project2-button-bg), var(--project-button-default-opacity));
+}
+
+#project2_buttons button:hover {
+    background: rgba(var(--project2-button-bg), 1);
+}
+
+#project3_buttons button {
+    background: rgba(var(--project3-button-bg), var(--project-button-default-opacity));
+}
+
+#project3_buttons button:hover {
+    background: rgba(var(--project3-button-bg), 1);
 }
 
 #contacts_section {
