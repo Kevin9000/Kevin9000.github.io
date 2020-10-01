@@ -1,16 +1,18 @@
 :root {
-    --main-color: #ff6f69;
-    --text-main-color: #E8E8E8;
-    --text-sub-color: #42AA7A;
+    --start-text-title-color: #E8E8E8;
+    --start-text-sub-title-color: #42AA7A;
+    --start-text-utility_color: 0, 89, 255;
 
-    --topnav-bg-color: #004F75;
+    --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 1);
+
+    --top-nav-bg-color: #004F75;
     --sub-topnav-bg-color: #6C85B7;
     --topnav-bg-color-invisible: #ffffff00;
     --topnav-bg-color-transition-time: 250ms;
 
     --main-container-width: 80%;
 
-    --padding-between-elements: 50px;
+    --padding-between-elements: 80px;
 
     --about-me-bg-color: #ffe7e7;
     --about-me-fg-color: #000000;
@@ -60,7 +62,7 @@ body {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: var(--topnav-bg-color);
+    background-color: var(--top-nav-bg-color);
     display: block;
     transition: background-color var(--topnav-bg-color-transition-time) linear;
     font-size: 1.5em;
@@ -97,7 +99,7 @@ body {
     float: right;
     font-size: 20px;
     cursor: pointer;
-    background-color: var(--topnav-bg-color);
+    background-color: var(--top-nav-bg-color);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -202,7 +204,7 @@ body {
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.mainStartText {
+.main_start_text {
     padding-top: 30vh;
     padding-bottom: 60vh;
 
@@ -210,14 +212,43 @@ body {
     font-size: 1.6em;
 }
 
-.mainStartText h1 {
-    color: var(--text-main-color);
+.main_start_text h1 {
+    color: var(--start-text-title-color);
 }
 
-.mainStartText h2 {
-    color: var(--text-sub-color);
+.main_start_text #start_text_divider {
+    border-color: rgb(var(--start-text-utility_color));
+    max-width: 2.5em;
+    border-width: 1.5px;
+    margin: auto;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.main_start_text h2 {
+    color: var(--start-text-sub-title-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #253E45;
+}
+
+.main_start_text #start_text_button {
+    margin-top: 2em;
+    border: none;
+    width: 10em;
+    height: 3em;
+    color: white;
+    border-radius: 10px;
+    background: #2B4E8F;
+    transition: 0.5s;
+    outline: none;
+}
+
+.main_start_text #start_text_button:hover {
+    width: 12em;
+    height: 4em;
+    border-radius: 50px;
+    background: rgb(var(--start-text-utility_color));
+    text-shadow: var(--text-highlight);
 }
 
 #mainComponent {
@@ -238,7 +269,7 @@ body {
     font-weight: bold;
     color: var(--elementTitle-fg-color);
     font-size: 1.4em;
-    padding-bottom: 1.5em;
+    padding-bottom: 3em;
 }
 
 .elementTitle:before,
@@ -257,8 +288,7 @@ body {
 }
 
 #about_me_section {
-    padding-top: var(--padding-between-elements);
-    padding-bottom: var(--padding-between-elements);
+    padding: var(--padding-between-elements) 5em;
     background-color: var(--about-me-bg-color);
     color: var(--about-me-fg-color);
 }
@@ -268,9 +298,7 @@ body {
 }
 
 #projects_section {
-    margin-top: -20px;
-    padding-bottom: var(--padding-between-elements);
-    padding-top: calc(var(--padding-between-elements) / 4);
+    padding: var(--padding-between-elements) 0px;
     background-color: var(--projects-bg-color);
     color: var(--projects-fg-color);
 }
@@ -322,11 +350,12 @@ body {
     transition: 0.5s;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
 
 .project_info .utility_button button:hover {
     border-radius: 50px;
-    text-shadow: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 1);
+    text-shadow: var(--text-highlight);
 }
 
 #project1_buttons button {
@@ -354,8 +383,7 @@ body {
 }
 
 #contacts_section {
-    margin-top: -20px;
-    padding-top: calc(var(--padding-between-elements) / 4);
+    padding-top: var(--padding-between-elements);
     background-color: var(--contacts-bg-color);
     color: var(--contacts-fg-color);
 }
@@ -412,7 +440,7 @@ body {
 
 #contact_info p{
     padding-left: 5px;
-    height: 49.7%;
+    height: 49.6%;
     display: flex;
     align-items: center;
     vertical-align: middle;
