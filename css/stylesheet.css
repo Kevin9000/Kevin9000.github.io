@@ -347,14 +347,15 @@ body {
 }
 
 .project_info .utility_button button {
-    width: 7.5em;
-    height: 3.0em;
+    width: 9em;
+    height: 3.5em;
     font-size: 1.0em;
     color: white;
     transition: 0.5s;
     border: none;
     border-radius: 5px;
     outline: none;
+    justify-content: space-between;
 }
 
 .project_info .utility_button button:hover {
@@ -472,8 +473,8 @@ body {
     #contact_form {
         display: block;
         align-items: center;
-        /* the width is given by 50% if the 100% width minus all the paddings added */
-        width: 100%;
+        /* the width is given by 100% width minus all the paddings added */
+        width: calc(calc(100% - 3em) - 20px);
         padding-bottom: var(--padding-between-elements);
         line-height: 30px;
     }
