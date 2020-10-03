@@ -342,6 +342,10 @@ body {
     padding-top: 30px;
 }
 
+.project_info .utility_button a{
+    text-decoration: none;
+}
+
 .project_info .utility_button button {
     width: 7.5em;
     height: 3.0em;
