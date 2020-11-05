@@ -314,8 +314,9 @@ body {
 
 .project_img{
     display: inline-block;
-    width: 10em;
-    height: 5em;
+    width: 18em;
+    height: 13em;
+    padding-top: 10px;
 }
 
 .project_info{
