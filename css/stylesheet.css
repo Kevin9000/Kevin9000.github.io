@@ -262,6 +262,8 @@ body {
 #mainComponent .description {
     width: 80%;
     margin: auto;
+    font-size: 1.1em;
+    line-height: 1.3em;
 }
 
 .elementTitle {
@@ -314,15 +316,15 @@ body {
 
 .project_img{
     display: inline-block;
-    width: 18em;
-    height: 13em;
-    padding-top: 10px;
+    width: 23em;
+    height: 15em;
+    padding-top: 20px;
 }
 
 .project_info{
     width: 100%;
     margin: 0px;
-    padding-left: 5em;
+    padding-left: 4em;
 }
 
 .project_info .title_project{
@@ -338,6 +340,12 @@ body {
 .project_info .project_description {
     font-size: 1.1em;
     line-height: 1.8em;
+}
+
+.description_space {
+    padding-left: 2em;
+    font-size: 1.0em;
+    line-height: 1.5em;
 }
 
 .project_info .utility_button {
@@ -493,6 +501,23 @@ body {
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
     }
+
+    .project {
+        display: block;
+        padding: 30px 40px;
+    }
+
+    .project_info{
+        width: 100%;
+        margin: 0px;
+        padding-left: 0em;
+    }
+
+    .title_project{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -506,6 +531,13 @@ body {
 
     html {
         font-size: 9px;
+    }
+
+    .project_img{
+        display: inline-block;
+        width: 18em;
+        height: 13em;
+        padding-top: 5px;
     }
 }
 
