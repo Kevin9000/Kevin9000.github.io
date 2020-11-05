@@ -12,7 +12,7 @@
 
     --main-container-width: 80%;
 
-    --padding-between-elements: 80px;
+    --padding-between-elements: 100px;
 
     --about-me-bg-color: #ffe7e7;
     --about-me-fg-color: #000000;
@@ -259,11 +259,11 @@ body {
     font-size: 1.7em;
 }
 
-#mainComponent .description {
+#mainComponent .about_me_description {
     width: 80%;
     margin: auto;
     font-size: 1.1em;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 .elementTitle {
@@ -311,7 +311,7 @@ body {
 
 .project {
     display: flex;
-    padding: 20px 40px;
+    padding: 70px 40px;
 }
 
 .project_img{
@@ -476,6 +476,56 @@ body {
         font-size: 8px;
     }
 
+    .elementTitle {
+        text-align: center;
+        font-weight: bold;
+        color: var(--elementTitle-fg-color);
+        font-size: 1.0em;
+        padding-bottom: 3em;
+    }
+
+    #about_me_section {
+        padding: var(--padding-between-elements) 2em;
+        background-color: var(--about-me-bg-color);
+        color: var(--about-me-fg-color);
+    }
+
+    .project {
+        display: block;
+        padding: 20px 30px;
+    }
+
+    .project_info{
+        width: 100%;
+        margin: 0px;
+        padding-left: 0em;
+    }
+
+    .title_project{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .project_img{
+        display: inline-block;
+        width: 15em;
+        height: 10em;
+        padding-top: 20px;
+    }
+
+    .project_info .utility_button button {
+        width: 7.5em;
+        height: 3.5em;
+        font-size: 1.0em;
+        color: white;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        justify-content: space-between;
+    }
+
     #contact_description {
         display: block;
     }
@@ -500,23 +550,6 @@ body {
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
-    }
-
-    .project {
-        display: block;
-        padding: 30px 40px;
-    }
-
-    .project_info{
-        width: 100%;
-        margin: 0px;
-        padding-left: 0em;
-    }
-
-    .title_project{
-        padding-top: 30px;
-        font-weight: bold;
-        font-size: 1.3em;
     }
 }
 
