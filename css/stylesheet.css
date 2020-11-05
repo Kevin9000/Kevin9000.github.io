@@ -515,15 +515,9 @@ body {
     }
 
     .project_info .utility_button button {
-        width: 7.5em;
-        height: 3.5em;
-        font-size: 1.0em;
-        color: white;
-        transition: 0.5s;
-        border: none;
-        border-radius: 5px;
-        outline: none;
-        justify-content: space-between;
+        width: 7.0em;
+        height: 3em;
+        font-size: 0.9em;
     }
 
     #contact_description {
@@ -534,8 +528,9 @@ body {
         display: block;
         align-items: center;
         /* the width is given by 100% width minus all the paddings added */
-        width: calc(calc(100% - 3em) - 20px);
+        width: calc(calc(100% - 2em) - 20px);
         padding-bottom: var(--padding-between-elements);
+        padding-left: 2em;
         line-height: 30px;
     }
 
@@ -545,12 +540,13 @@ body {
     }
     
     #contact_info p{
-        padding-left: 3em;
+        padding-left: 2em;
         height: 100px;
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
     }
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -568,9 +564,21 @@ body {
 
     .project_img{
         display: inline-block;
-        width: 18em;
-        height: 13em;
+        width: 17em;
+        height: 12em;
         padding-top: 5px;
+    }
+
+    .project_info .utility_button button {
+        width: 7.5em;
+        height: 3.5em;
+        font-size: 0.9em;
+    }
+
+    .project_info{
+        width: 100%;
+        margin: 0px;
+        padding-left: 2em;
     }
 }
 
