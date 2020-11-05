@@ -259,13 +259,6 @@ body {
     font-size: 1.7em;
 }
 
-#mainComponent .about_me_description {
-    width: 80%;
-    margin: auto;
-    font-size: 1.1em;
-    line-height: 1.5em;
-}
-
 .elementTitle {
     text-align: center;
     font-weight: bold;
@@ -297,6 +290,24 @@ body {
 
 #about_me_title {
     background-color: var(--about-me-bg-color);
+}
+
+#about_me_info {
+    display: flex;
+    padding: 20px 2em;
+    width: 100%;
+}
+
+#photo {
+    width: 60em;
+    height: 50em;
+}
+
+.about_me_description {
+    padding-left: 80px;
+    padding-top: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 #projects_section {
