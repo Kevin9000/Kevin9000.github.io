@@ -29,6 +29,7 @@
     --contacts-bg-color: #9c9c9c;
     --contacts-fg-color: #000000;
     --contacts-border-color: #6861617a;
+    --contacts-bg-color-focus: #a8a8a8;
 
     --elementTitle-fg-color: #000000;
     --elementTitle-title-color: #a3cbff;
@@ -263,8 +264,13 @@ body {
     text-align: center;
     font-weight: bold;
     color: var(--elementTitle-fg-color);
-    font-size: 1.4em;
+    font-size: 2em;
     padding-bottom: 3em;
+
+    font-family: Georgia;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    font-weight: normal;
 }
 
 .elementTitle:before,
@@ -311,6 +317,23 @@ body {
     line-height: 1.5em;
 }
 
+#about_me_main_info {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#about_me_sub_info {
+    font-size: 0.8em;
+    color: #000000b6;
+    padding-left: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+#about_me_description_information {
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+
 #projects_section {
     padding: var(--padding-between-elements) 0px;
     background-color: var(--projects-bg-color);
@@ -339,9 +362,9 @@ body {
     padding-left: 4em;
 }
 
-.project_info .title_project{
+.title_project{
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .project_info .technology_used{
@@ -438,11 +461,15 @@ body {
     font-weight: bold;
 }
 
-#contact_form .form_input {
+.form_input {
     width: 80%;
     padding: 20px 20px;
     background-color: var(--contacts-bg-color);
     border: 2px groove var(--contacts-border-color);
+}
+
+.form_input:focus {
+    background-color: var(--contacts-bg-color-focus);
 }
 
 #contact_form .submit_button {
@@ -489,11 +516,8 @@ body {
     }
 
     .elementTitle {
-        text-align: center;
-        font-weight: bold;
-        color: var(--elementTitle-fg-color);
-        font-size: 1.0em;
-        padding-bottom: 3em;
+        font-size: 1.3em;
+        letter-spacing: 1px;
     }
 
     #about_me_section {
@@ -591,6 +615,11 @@ body {
         width: 100%;
         margin: 0px;
         padding-left: 2em;
+    }
+
+    .elementTitle {
+        font-size: 1.7em;
+        letter-spacing: 2px;
     }
 }
 
