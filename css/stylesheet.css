@@ -4,6 +4,8 @@
     --start-text-utility_color: 0, 89, 255;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 1);
+    --text-color-black-light: #000000d7;
+    --text-color-black-lighter: #000000b6;
 
     --top-nav-bg-color: #004F75;
     --sub-topnav-bg-color: #6C85B7;
@@ -205,16 +207,31 @@ body {
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
+.main_text {
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+.sub_text {
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--text-color-black-light);
+}
+
 .main_start_text {
     padding-top: 30vh;
     padding-bottom: 60vh;
-
     text-align: center;
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
-.main_start_text h1 {
+.main_start_text #start_text_main {
     color: var(--start-text-title-color);
+    font-size: 2em;
+    font-family: serif;
+    letter-spacing: 3px;
 }
 
 .main_start_text #start_text_divider {
@@ -226,22 +243,31 @@ body {
     margin-bottom: 0.6em;
 }
 
-.main_start_text h2 {
+.main_start_text #start_text_sub {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: monospace;
+    font-style: italic;
+
     color: var(--start-text-sub-title-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #253E45;
 }
 
 .main_start_text #start_text_button {
-    margin-top: 2em;
+    margin-top: 3em;
     border: none;
-    width: 10em;
-    height: 3em;
+    width: 12em;
+    height: 4em;
     color: white;
     border-radius: 10px;
     background: #2B4E8F;
     transition: 0.5s;
     outline: none;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.65em;
+    letter-spacing: 1px;
 }
 
 .main_start_text #start_text_button:hover {
@@ -317,21 +343,11 @@ body {
     line-height: 1.5em;
 }
 
-#about_me_main_info {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
 #about_me_sub_info {
     font-size: 0.8em;
-    color: #000000b6;
+    color: var(--text-color-black-lighter);
     padding-left: 1.5em;
     padding-bottom: 2.5em;
-}
-
-#about_me_description_information {
-    line-height: 1.8em;
-    letter-spacing: 1px;
 }
 
 #projects_section {
