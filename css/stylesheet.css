@@ -304,6 +304,7 @@ body {
 }
 
 .about_me_description {
+    width: 100%;
     padding-left: 80px;
     padding-top: 30px;
     font-size: 1.1em;
