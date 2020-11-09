@@ -1,19 +1,23 @@
 :root {
-    --start-text-title-color: #E8E8E8;
-    --start-text-sub-title-color: #42AA7A;
-    --start-text-utility_color: 0, 89, 255;
+    --primary-text-color: #E8E8E8;
 
-    --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 1);
+    --primary-color: 12, 35, 105;
+    
+
+    --start-text-sub-title-color: #42AA7A;
+
+
+    --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
+    
+
     --text-color-black-light: #000000d7;
     --text-color-black-lighter: #000000b6;
 
-    --top-nav-bg-color: #004F75;
     --sub-topnav-bg-color: #6C85B7;
     --topnav-bg-color-invisible: #ffffff00;
     --topnav-bg-color-transition-time: 250ms;
 
     --main-container-width: 80%;
-
     --padding-between-elements: 100px;
 
     --about-me-bg-color: #ffe7e7;
@@ -65,7 +69,7 @@ body {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: var(--top-nav-bg-color);
+    background-color: rgb(var(--primary-color));
     display: block;
     transition: background-color var(--topnav-bg-color-transition-time) linear;
     font-size: 1.5em;
@@ -73,27 +77,27 @@ body {
 
 #topnav i {
     float: left;
-    color: var(--sub-topnav-bg-color);
+    color: var(--primary-text-color);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1.3em;
 }
 
-.element a {
+#element a {
     float: right;
-    color: #f2f2f2;
+    color: var(--primary-text-color);
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
 }
 
-#topnav a:hover {
+#element a:hover {
     background-color: #ddd;
     color: black;
 }
 
-#topnav a:active {
+#element a:active {
     background-color: #4CAF50;
     color: white;
 }
@@ -102,7 +106,7 @@ body {
     float: right;
     font-size: 20px;
     cursor: pointer;
-    background-color: var(--top-nav-bg-color);
+    background-color: rgb(var(--primary-color));
     color: white;
     padding: 10px 15px;
     border: none;
@@ -228,15 +232,16 @@ body {
 }
 
 .main_start_text #start_text_main {
-    color: var(--start-text-title-color);
+    color: var(--primary-text-color);
     font-size: 2em;
     font-family: serif;
     letter-spacing: 3px;
 }
 
 .main_start_text #start_text_divider {
-    border-color: rgb(var(--start-text-utility_color));
-    max-width: 2.5em;
+    border-color: rgb(var(--primary-color));
+    filter: brightness(200%);
+    max-width: 3em;
     border-width: 1.5px;
     margin: auto;
     margin-top: 0.6em;
@@ -261,7 +266,7 @@ body {
     height: 4em;
     color: white;
     border-radius: 10px;
-    background: #2B4E8F;
+    background: rgb(var(--primary-color));
     transition: 0.5s;
     outline: none;
 
@@ -271,10 +276,11 @@ body {
 }
 
 .main_start_text #start_text_button:hover {
+    background: rgb(var(--primary-color));
+    filter: brightness(150%);
     width: 12em;
     height: 4em;
     border-radius: 50px;
-    background: rgb(var(--start-text-utility_color));
     text-shadow: var(--text-highlight);
 }
 
@@ -519,7 +525,7 @@ body {
 
 
 @media only screen and (max-width: 767px) {
-    .element {
+    #element {
         display: none;
     }
 
