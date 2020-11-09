@@ -11,9 +11,10 @@
     --main-container-width: 80%;
     --padding-between-elements: 100px;
 
-    --about-me-bg-color: #ffe7e7;
-    --projects-bg-color: #b89595;
-    --contacts-bg-color: #9c9c9c;
+    --first-section-color: #344031;
+    --second-section-color: #45723B;
+    --third-section-color: #4D6673;
+    --fourth-section-color: #313A3E;
 
     --project-text-shadow-length: 5px;
 
@@ -309,12 +310,8 @@ body {
 
 #about_me_section {
     padding: var(--padding-between-elements) 5em;
-    background-color: var(--about-me-bg-color);
+    background: linear-gradient(to top left, var(--first-section-color) 0%, var(--second-section-color) 100%);
     color: var(--primary-text-color);
-}
-
-#about_me_title {
-    background-color: var(--about-me-bg-color);
 }
 
 #about_me_info {
@@ -345,12 +342,8 @@ body {
 
 #projects_section {
     padding: var(--padding-between-elements) 0px;
-    background-color: var(--projects-bg-color);
+    background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
-}
-
-#projects_title {
-    background-color: var(--projects-bg-color);
 }
 
 .project {
@@ -443,12 +436,8 @@ body {
 
 #contacts_section {
     padding-top: var(--padding-between-elements);
-    background-color: var(--contacts-bg-color);
+    background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
-}
-
-#contacts_title {
-    background-color: var(--contacts-bg-color);
 }
 
 #contact_description {
@@ -473,7 +462,7 @@ body {
 .form_input {
     width: 80%;
     padding: 20px 20px;
-    background-color: var(--contacts-bg-color);
+    background-color: var(--third-section-color);
     border: 2px groove var(--contacts-border-color);
 }
 
@@ -531,7 +520,7 @@ body {
 
     #about_me_section {
         padding: var(--padding-between-elements) 2em;
-        background-color: var(--about-me-bg-color);
+        background-color: var(--first-section-color);
         color: var(--primary-text-color);
     }
 
