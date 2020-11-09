@@ -1,30 +1,20 @@
 :root {
-    --primary-text-color: #E8E8E8;
+    --primary-text-color: #ffffff;
 
-    --primary-color: 12, 35, 105;
+    --primary-color: rgb(12, 35, 105);
+    --sub-color: rgb(48, 113, 232);
     
-
     --start-text-sub-title-color: #42AA7A;
 
-
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
-    
-
-    --text-color-black-light: #000000d7;
-    --text-color-black-lighter: #000000b6;
-
-    --sub-topnav-bg-color: #6C85B7;
-    --topnav-bg-color-invisible: #ffffff00;
-    --topnav-bg-color-transition-time: 250ms;
 
     --main-container-width: 80%;
     --padding-between-elements: 100px;
 
     --about-me-bg-color: #ffe7e7;
-    --about-me-fg-color: #000000;
-
     --projects-bg-color: #b89595;
-    --projects-fg-color: #000000;
+    --contacts-bg-color: #9c9c9c;
+
     --project-text-shadow-length: 5px;
 
     --project-button-default-opacity: 0.3;
@@ -32,13 +22,8 @@
     --project2-button-bg: 43,207,80;
     --project3-button-bg: 241,192,78;
 
-    --contacts-bg-color: #9c9c9c;
-    --contacts-fg-color: #000000;
     --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
-
-    --elementTitle-fg-color: #000000;
-    --elementTitle-title-color: #a3cbff;
 
     --min-width-smartphone-breakpoint: 320px;
     --min-width-tablet-breakpoint: 600px;
@@ -69,9 +54,9 @@ body {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: rgb(var(--primary-color));
+    background-color: var(--primary-color);
     display: block;
-    transition: background-color var(--topnav-bg-color-transition-time) linear;
+    transition: background-color 250ms linear;
     font-size: 1.5em;
 }
 
@@ -99,25 +84,26 @@ body {
 
 #element a:active {
     background-color: #4CAF50;
-    color: white;
+    color: var(--primary-text-color);
 }
 
 #opennavbtn {
-    float: right;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
     font-size: 20px;
+    float: right;
     cursor: pointer;
-    background-color: rgb(var(--primary-color));
-    color: white;
     padding: 10px 15px;
     border: none;
     display: none;
 }
 
 .subNavBar {
+    background-color: var(--primary-color);
+    filter: brightness(150%);
     overflow-y: hidden;
     height: 0px;
     width: 100%;
-    background-color: var(--sub-topnav-bg-color);
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
@@ -212,16 +198,17 @@ body {
 }
 
 .main_text {
+    color: var(--primary-text-color);
     font-size: 1.6em;
     font-weight: 800;
 }
 
 .sub_text {
+    color: var(--primary-text-color);
     line-height: 1.8em;
     letter-spacing: 1px;
     font-size: 1em;
     font-weight: 300;
-    color: var(--text-color-black-light);
 }
 
 .main_start_text {
@@ -239,7 +226,7 @@ body {
 }
 
 .main_start_text #start_text_divider {
-    border-color: rgb(var(--primary-color));
+    border-color: var(--primary-color);
     filter: brightness(200%);
     max-width: 3em;
     border-width: 1.5px;
@@ -264,9 +251,9 @@ body {
     border: none;
     width: 12em;
     height: 4em;
-    color: white;
+    color: var(--primary-text-color);
     border-radius: 10px;
-    background: rgb(var(--primary-color));
+    background: var(--primary-color);
     transition: 0.5s;
     outline: none;
 
@@ -276,7 +263,7 @@ body {
 }
 
 .main_start_text #start_text_button:hover {
-    background: rgb(var(--primary-color));
+    background: var(--primary-color);
     filter: brightness(150%);
     width: 12em;
     height: 4em;
@@ -295,7 +282,7 @@ body {
 .elementTitle {
     text-align: center;
     font-weight: bold;
-    color: var(--elementTitle-fg-color);
+    color: var(--sub-color);
     font-size: 2em;
     padding-bottom: 3em;
 
@@ -313,7 +300,7 @@ body {
     margin: 0 2em 0 -55%;
     vertical-align: middle;
     border-bottom: 1px solid;
-    color: var(--elementTitle-title-color);
+    color: var(--sub-color);
 }
 
 .elementTitle:after {
@@ -323,7 +310,7 @@ body {
 #about_me_section {
     padding: var(--padding-between-elements) 5em;
     background-color: var(--about-me-bg-color);
-    color: var(--about-me-fg-color);
+    color: var(--primary-text-color);
 }
 
 #about_me_title {
@@ -350,8 +337,8 @@ body {
 }
 
 #about_me_sub_info {
+    color: var(--primary-text-color);
     font-size: 0.8em;
-    color: var(--text-color-black-lighter);
     padding-left: 1.5em;
     padding-bottom: 2.5em;
 }
@@ -359,7 +346,7 @@ body {
 #projects_section {
     padding: var(--padding-between-elements) 0px;
     background-color: var(--projects-bg-color);
-    color: var(--projects-fg-color);
+    color: var(--primary-text-color);
 }
 
 #projects_title {
@@ -417,7 +404,7 @@ body {
     width: 9em;
     height: 3.5em;
     font-size: 1.0em;
-    color: white;
+    color: var(--primary-text-color);
     transition: 0.5s;
     border: none;
     border-radius: 5px;
@@ -457,7 +444,7 @@ body {
 #contacts_section {
     padding-top: var(--padding-between-elements);
     background-color: var(--contacts-bg-color);
-    color: var(--contacts-fg-color);
+    color: var(--primary-text-color);
 }
 
 #contacts_title {
@@ -545,7 +532,7 @@ body {
     #about_me_section {
         padding: var(--padding-between-elements) 2em;
         background-color: var(--about-me-bg-color);
-        color: var(--about-me-fg-color);
+        color: var(--primary-text-color);
     }
 
     .project {
