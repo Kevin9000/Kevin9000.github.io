@@ -518,10 +518,28 @@ body {
         letter-spacing: 1px;
     }
 
+    .elementTitle:before,
+    .elementTitle:after {
+        width: calc(var(--main-container-width)/4.5);
+    }
+
     #about_me_section {
-        padding: var(--padding-between-elements) 2em;
+        padding: var(--padding-between-elements) 1.5em;
         background-color: var(--first-section-color);
         color: var(--primary-text-color);
+    }
+
+    #about_me_info {
+        display: block;
+        padding: 20px 0em;
+    }
+
+    .about_me_description {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 1.0em;
+        line-height: 1.3em;
     }
 
     .project {
