@@ -2,7 +2,7 @@
     --primary-text-color: #ffffff;
 
     --primary-color: rgb(12, 35, 105);
-    --sub-color: rgb(48, 113, 232);
+    --sub-color: rgb(246, 76, 114);
     
     --start-text-sub-title-color: #42AA7A;
 
@@ -12,8 +12,8 @@
     --padding-between-elements: 100px;
 
     --first-section-color: #344031;
-    --second-section-color: #45723B;
-    --third-section-color: #4D6673;
+    --second-section-color: #57784E;
+    --third-section-color: #497169;
     --fourth-section-color: #313A3E;
 
     --project-text-shadow-length: 5px;
@@ -57,7 +57,7 @@ body {
     overflow: hidden;
     background-color: var(--primary-color);
     display: block;
-    transition: background-color 250ms linear;
+    transition: background-color 300ms linear;
     font-size: 1.5em;
 }
 

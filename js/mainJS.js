@@ -25,11 +25,11 @@ function closeNav() {
 window.onscroll = function (ev) {
     if (window.innerWidth > 767) {
         if (window.scrollY == 0) {
-            document.getElementById("topnav").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--topnav-bg-color-invisible");
-            document.getElementById("opennavbtn").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--topnav-bg-color-invisible");
+            document.getElementById("topnav").style.backgroundColor = "transparent";
+            document.getElementById("opennavbtn").style.backgroundColor = "transparent";
         } else {
-            document.getElementById("topnav").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--topnav-bg-color");
-            document.getElementById("opennavbtn").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--topnav-bg-color");
+            document.getElementById("topnav").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--primary-color");
+            document.getElementById("opennavbtn").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--primary-color");
         }
     }
 }
