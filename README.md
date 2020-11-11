@@ -20,7 +20,7 @@ A Web page (portfolio) that has the job to show off my main projects.
 1. Initialize Git <br />
 `git init`
 2. Clone the repo of the project <br />
-`git clone https://github.com/Kevin9000/FallingBall_Game.git`
+`git clone https://github.com/Wang-Kevin900/Wang-Kevin900.github.io.git`
 3. Start an IDE and open the project <br />
 4. Enjoy! 
 
