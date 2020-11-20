@@ -15,6 +15,7 @@ A Web page (portfolio) that has the job to show off my main projects.
 ## Technologies
 * HTML5 & CSS
 * Javascript 
+* Media query
 
 ## Installation
 1. Initialize Git <br />
