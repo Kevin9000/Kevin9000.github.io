@@ -18,9 +18,9 @@
 
     --project-text-shadow-length: 5px;
 
-    --project1-primary-bg: rgb(43,88,207);
-    --project2-primary-bg: rgb(43,207,80);
-    --project3-primary-bg: rgb(241,192,78);
+    --project1-primary-bg: rgb(0,150,255);
+    --project2-primary-bg: rgb(0,255,124);
+    --project3-primary-bg: rgb(255,185,0);
 
     --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
@@ -198,20 +198,6 @@ body {
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.main_text {
-    color: var(--primary-text-color);
-    font-size: 1.6em;
-    font-weight: 800;
-}
-
-.sub_text {
-    color: var(--primary-text-color);
-    line-height: 1.8em;
-    letter-spacing: 1px;
-    font-size: 1em;
-    font-weight: 300;
-}
-
 .main_start_text {
     padding-top: 30vh;
     padding-bottom: 60vh;
@@ -333,11 +319,26 @@ body {
     line-height: 1.5em;
 }
 
+.main_text {
+    color: var(--primary-text-color);
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
 #about_me_sub_info {
     color: var(--primary-text-color);
     font-size: 0.8em;
     padding-left: 1.5em;
     padding-bottom: 2.5em;
+    filter: brightness(70%);
+}
+
+.sub_text {
+    color: var(--primary-text-color);
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 300;
 }
 
 #projects_section {
@@ -367,6 +368,8 @@ body {
 .title_project{
     font-weight: bold;
     font-size: 1.5em;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589); 
+    filter: brightness(140%);
 }
 
 .project_info .technology_used {
@@ -375,10 +378,9 @@ body {
     margin: 0 30px; 
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 1px 10px;
+    padding: 0.3em 1em;
     border: 1px dotted;
     border-radius: 45%;
-    opacity: 0.8;
 }
 
 .project_info .project_description {
@@ -417,6 +419,10 @@ body {
     text-shadow: var(--text-highlight);
 }
 
+#project1 .title_project {
+    color: var(--project1-primary-bg);
+ }
+
 #project1 .technology_used {
     border-color: var(--project1-primary-bg);
 }
@@ -430,6 +436,10 @@ body {
     filter: brightness(105%);
 }
 
+#project2 .title_project {
+    color: var(--project2-primary-bg);
+ }
+
 #project2 .technology_used {
     border-color: var(--project2-primary-bg);
 }
@@ -442,6 +452,10 @@ body {
 #project2_buttons button:hover {
     filter: brightness(105%);
 }
+
+#project3 .title_project {
+    color: var(--project3-primary-bg);
+ }
 
 #project3 .technology_used {
     border-color: var(--project3-primary-bg);
