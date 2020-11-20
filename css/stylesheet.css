@@ -18,10 +18,9 @@
 
     --project-text-shadow-length: 5px;
 
-    --project-button-default-opacity: 0.3;
-    --project1-button-bg: 43,88,207;
-    --project2-button-bg: 43,207,80;
-    --project3-button-bg: 241,192,78;
+    --project1-primary-bg: rgb(43,88,207);
+    --project2-primary-bg: rgb(43,207,80);
+    --project3-primary-bg: rgb(241,192,78);
 
     --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
@@ -53,6 +52,7 @@ body {
 
 #topnav {
     position: fixed;
+    z-index: 1;
     width: 100%;
     overflow: hidden;
     background-color: var(--primary-color);
@@ -369,9 +369,16 @@ body {
     font-size: 1.5em;
 }
 
-.project_info .technology_used{
-    font-weight: bold;
-    padding: 15px 15px; 
+.project_info .technology_used {
+    font-size: 0.9em;
+    display: inline-block;
+    margin: 0 30px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 1px 10px;
+    border: 1px dotted;
+    border-radius: 45%;
+    opacity: 0.8;
 }
 
 .project_info .project_description {
@@ -410,28 +417,43 @@ body {
     text-shadow: var(--text-highlight);
 }
 
+#project1 .technology_used {
+    border-color: var(--project1-primary-bg);
+}
+
 #project1_buttons button {
-    background: rgba(var(--project1-button-bg), var(--project-button-default-opacity));
+    background: var(--project1-primary-bg);
+    filter: brightness(70%);
 }
 
 #project1_buttons button:hover {
-    background: rgba(var(--project1-button-bg), 1);
+    filter: brightness(105%);
+}
+
+#project2 .technology_used {
+    border-color: var(--project2-primary-bg);
 }
 
 #project2_buttons button {
-    background: rgba(var(--project2-button-bg), var(--project-button-default-opacity));
+    background: var(--project2-primary-bg);
+    filter: brightness(70%);
 }
 
 #project2_buttons button:hover {
-    background: rgba(var(--project2-button-bg), 1);
+    filter: brightness(105%);
+}
+
+#project3 .technology_used {
+    border-color: var(--project3-primary-bg);
 }
 
 #project3_buttons button {
-    background: rgba(var(--project3-button-bg), var(--project-button-default-opacity));
+    background: var(--project3-primary-bg);
+    filter: brightness(70%);
 }
 
 #project3_buttons button:hover {
-    background: rgba(var(--project3-button-bg), 1);
+    filter: brightness(105%);
 }
 
 #contacts_section {
@@ -472,6 +494,7 @@ body {
 
 #contact_form .submit_button {
     border: 1.5px solid #000000;
+    color: var(--primary-text-color);
 }
 
 #contact_form .submit_button:hover {
