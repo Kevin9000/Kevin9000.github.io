@@ -121,13 +121,13 @@ body {
     display: block;
 }
 
-.sideBar {
+#sideBar {
     position: fixed;
     top: 30%;
     font-size: 1.5em;
 }
 
-.sideBar h6 {
+#sideBar h6 {
     color: #7E7E7E;
 }
 
@@ -144,7 +144,7 @@ body {
     transition: 0.2s;
 }
 
-.sideBar img {
+#sideBar img {
     width: 1.95em;
     height: 1.95em;
     padding: 0.85em;
@@ -550,6 +550,17 @@ body {
         font-size: 8px;
     }
 
+    #sideBar img {
+        width: 1.4em;
+        height: 1.4em;
+        padding: 0.7em;
+    }
+
+    .main_start_text {
+        margin: 0px 30px;
+        font-size: 1.7em;
+    }
+
     .elementTitle {
         font-size: 1.3em;
         letter-spacing: 1px;
@@ -562,8 +573,10 @@ body {
 
     #about_me_section {
         padding: var(--padding-between-elements) 1.5em;
-        background-color: var(--first-section-color);
-        color: var(--primary-text-color);
+    }
+
+    #photo {
+        margin-bottom: 40px;
     }
 
     #about_me_info {
@@ -572,7 +585,6 @@ body {
     }
 
     .about_me_description {
-        width: 100%;
         padding-left: 0px;
         padding-top: 0px;
         font-size: 1.0em;
@@ -649,6 +661,17 @@ body {
 
     html {
         font-size: 9px;
+    }
+
+    #about_me_section {
+        padding: var(--padding-between-elements) 2.5em;
+    }
+
+    .about_me_description {
+        padding-left: 20px;
+        padding-top: 15px;
+        font-size: 1.1em;
+        line-height: 1.4em;
     }
 
     .project_img{
