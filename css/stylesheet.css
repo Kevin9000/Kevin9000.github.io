@@ -50,6 +50,10 @@ body {
     padding: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #topnav {
     position: fixed;
     z-index: 1;
@@ -93,7 +97,6 @@ body {
     color: var(--primary-text-color);
     font-size: 20px;
     float: right;
-    cursor: pointer;
     padding: 10px 15px;
     border: none;
     display: none;
@@ -349,7 +352,7 @@ body {
 
 .project {
     display: flex;
-    padding: 70px 40px;
+    padding: 100px 70px;
 }
 
 .project_img{
@@ -470,6 +473,19 @@ body {
     filter: brightness(105%);
 }
 
+#project_showmore_button {
+    position: absolute;
+    left: 50%;
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+#project_showmore_button:hover {
+    color: red;
+}
+
 #contacts_section {
     padding-top: var(--padding-between-elements);
     background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
@@ -512,6 +528,7 @@ body {
 }
 
 #contact_form .submit_button:hover {
+    cursor: pointer;
     transition: 0.2s;
     color: #2583b9;
     border: 2px groove #2583b9;
