@@ -113,7 +113,7 @@ button:hover {
     transition: all 0.3s;
 }
 
-.subNavBar.addClass {
+.subNavBar.addSubNavBarHeight {
     height: 10em;
 }
 
@@ -430,12 +430,12 @@ button:hover {
     border-color: var(--project1-primary-bg);
 }
 
-#project1_buttons button {
+#project1 button {
     background: var(--project1-primary-bg);
     filter: brightness(70%);
 }
 
-#project1_buttons button:hover {
+#project1 button:hover {
     filter: brightness(105%);
 }
 
@@ -447,12 +447,12 @@ button:hover {
     border-color: var(--project2-primary-bg);
 }
 
-#project2_buttons button {
+#project2 button {
     background: var(--project2-primary-bg);
     filter: brightness(70%);
 }
 
-#project2_buttons button:hover {
+#project2 button:hover {
     filter: brightness(105%);
 }
 
@@ -464,12 +464,12 @@ button:hover {
     border-color: var(--project3-primary-bg);
 }
 
-#project3_buttons button {
+#project3 button {
     background: var(--project3-primary-bg);
     filter: brightness(70%);
 }
 
-#project3_buttons button:hover {
+#project3 button:hover {
     filter: brightness(105%);
 }
 
@@ -484,6 +484,12 @@ button:hover {
 
 #project_showmore_button:hover {
     color: red;
+}
+
+.hidden_project {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
 }
 
 #contacts_section {
