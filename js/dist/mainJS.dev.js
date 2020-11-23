@@ -39,24 +39,16 @@ function closeNav() {
 } // if the show more button has been clicked, show or hide more projects (all those with hidden project class)
 
 
-var showMoreProject = false;
-
-function buttonShowMoreProjectClick() {
-  if (showMoreProject) {
-    hideHiddenProject();
-    showMoreProject = false;
-  } else {
-    showHiddenProject();
-    showMoreProject = true;
-  }
-}
-
 function showHiddenProject() {
-  var maxHeightHiddenProject = document.querySelector(".hidden_project").style.height;
-  console.log(maxHeightHiddenProject);
-  document.querySelector(".hidden_project").style.maxHeight = "100px";
+  document.getElementById("show_more_project_button").style.visibility = "hidden";
+  document.getElementById("hide_project_button").style.visibility = "visible";
+  document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + "px";
+  document.querySelector(".hidden_project").style.padding = document.querySelector(".project").style.padding;
+  console.log(document.querySelector(".project").style.padding);
 }
 
 function hideHiddenProject() {
+  document.getElementById("show_more_project_button").style.visibility = "visible";
+  document.getElementById("hide_project_button").style.visibility = "hidden";
   document.querySelector(".hidden_project").style.maxHeight = "0px";
 }

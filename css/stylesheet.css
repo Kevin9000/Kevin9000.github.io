@@ -473,7 +473,7 @@ button:hover {
     filter: brightness(105%);
 }
 
-#project_showmore_button {
+.show_hide_project_buttons {
     position: absolute;
     left: 50%;
     background-color: #00000000;
@@ -482,11 +482,21 @@ button:hover {
     transition: 0.4s;
 }
 
-#project_showmore_button:hover {
+.show_hide_project_buttons:hover {
     color: red;
 }
 
+#show_more_project_button {
+    visibility: visible;
+}
+
+#hide_project_button {
+    visibility: hidden;
+}
+
 .hidden_project {
+    display: flex;
+    padding: 0px 70px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
@@ -684,6 +694,10 @@ button:hover {
 
     html {
         font-size: 9px;
+    }
+
+    .sub_text {
+        padding: 0px 50px;
     }
 
     #about_me_section {
