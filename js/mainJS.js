@@ -43,8 +43,7 @@ function showHiddenProject() {
     document.getElementById("hide_project_button").style.visibility = "visible";
 
     document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + "px";
-    document.querySelector(".hidden_project").style.padding = document.querySelector(".project").style.padding;
-    console.log(document.querySelector(".project").style.padding);
+    document.querySelector(".hidden_project").style.padding =  window.getComputedStyle(document.querySelector(".project")).padding;
 }
 
 function hideHiddenProject() {
@@ -52,5 +51,5 @@ function hideHiddenProject() {
     document.getElementById("hide_project_button").style.visibility = "hidden";
 
     document.querySelector(".hidden_project").style.maxHeight = "0px";
-
+    document.querySelector(".hidden_project").style.padding =  "0px 0px";
 }

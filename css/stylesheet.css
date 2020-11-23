@@ -153,48 +153,48 @@ button:hover {
     padding: 0.85em;
 }
 
-.linkedin {
+#linkedin {
     display: inline-block;
     background-color: #0368c7;
 }
 
-.linkedin:hover>a>.sidenav-text {
+#linkedin:hover>a>.sidenav-text {
     visibility: visible;
     opacity: 1;
     font-size: 1.1em;
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.github {
+#github {
     background-color: #000000;
     display: inline-block;
 }
 
-.github:hover>a>.sidenav-text {
+#github:hover>a>.sidenav-text {
     visibility: visible;
     opacity: 1;
     font-size: 1.1em;
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.email {
+#email {
     background-color: #018d06;
     display: inline-block;
 }
 
-.email:hover>a>.sidenav-text {
+#email:hover>a>.sidenav-text {
     visibility: visible;
     opacity: 1;
     font-size: 1.1em;
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.resume {
+#resume {
     background-color: #646464;
     display: inline-block;
 }
 
-.resume:hover>a>.sidenav-text {
+#resume:hover>a>.sidenav-text {
     visibility: visible;
     opacity: 1;
     font-size: 1.1em;
@@ -376,9 +376,13 @@ button:hover {
 }
 
 .project_info .technology_used {
+    margin-left: 20px; 
+}
+
+.single_technology_used {
     font-size: 0.9em;
     display: inline-block;
-    margin: 0 30px; 
+    margin-left: 20px; 
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 0.3em 1em;
@@ -426,7 +430,7 @@ button:hover {
     color: var(--project1-primary-bg);
  }
 
-#project1 .technology_used {
+#project1 .technology_used .single_technology_used{
     border-color: var(--project1-primary-bg);
 }
 
@@ -443,7 +447,7 @@ button:hover {
     color: var(--project2-primary-bg);
  }
 
-#project2 .technology_used {
+#project2 .technology_used .single_technology_used{
     border-color: var(--project2-primary-bg);
 }
 
@@ -460,7 +464,7 @@ button:hover {
     color: var(--project3-primary-bg);
  }
 
-#project3 .technology_used {
+#project3 .technology_used .single_technology_used{
     border-color: var(--project3-primary-bg);
 }
 
@@ -496,7 +500,6 @@ button:hover {
 
 .hidden_project {
     display: flex;
-    padding: 0px 70px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;

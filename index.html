@@ -37,28 +37,28 @@
     <div id="sideBar">
         <h6> Follow Me </h6>
         <br>
-        <div class="linkedin">
+        <div id="linkedin">
             <a href="https://www.linkedin.com/in/kevin-wang-83ab931b1" target="_blank">
                 <text class="sidenav-text"> LinkedIn </text>
                 <img src="img/linkedin.png" alt="Error Loading Image">
             </a>
         </div>
         <br>
-        <div class="github">
+        <div id="github">
             <a href="https://github.com/Wang-Kevin900" target="_blank">
                 <text class="sidenav-text"> GitHub </text>
                 <img src="img/github.png" alt="Error Loading Image">
             </a>
         </div>
         <br>
-        <div class="email">
+        <div id="email">
             <a href="#contacts_section">
                 <text class="sidenav-text"> E-Mail </text>
                 <img src="img/email.png" alt="Error Loading Image">
             </a>
         </div>
         <br>
-        <div class="resume">
+        <div id="resume">
             <a href="resources/curriculum.pdf" target="_blank">
                 <text class="sidenav-text"> Resume </text>
                 <img src="img/resume.png" alt="Error Loading Image">
@@ -121,9 +121,12 @@
                         Enigma Machine
                     </p>
                     
-                    <p class="technology_used">
-                        Python
-                    </p>
+                    <div class="technology_used">
+                        <p class="single_technology_used">
+                            Python
+                        </p>
+                    </div>
+
                     <p class="project_description">
                         - Developed software in python that simulates the functionality of the Enigma Machine used in
                         the WW2<br>
@@ -149,9 +152,13 @@
                     <p class="title_project">
                         Falling Ball
                     </p>
-                    <p class="technology_used">
-                        Java
-                    </p>
+
+                    <div class="technology_used">
+                        <p class="single_technology_used">
+                            Java
+                        </p>
+                    </div>
+
                     <p class="project_description">
                         - Designed and developed a full life-cycle Java game with an user friendly UI<br>
                         - Implemented a server that has the functionality to:<br>
@@ -178,9 +185,13 @@
                     <p class="title_project">
                         Line Follower Arduino
                     </p>
-                    <p class="technology_used">
-                        Arduino
-                    </p>
+                    
+                    <div class="technology_used">
+                        <p class="single_technology_used">
+                            Arduino
+                        </p>
+                    </div>
+
                     <p class="project_description">
                         - Led a team of software developer to build a clean and organized code. <br>
                         - Designed and built a car, and developed embedded system using the Arduino micro-controller
@@ -204,15 +215,28 @@
             <button class="show_hide_project_buttons" id="show_more_project_button" onclick="showHiddenProject()">Show More</button>
 
             <!-- Project 4 -->
-            <div class="hidden_project">
+            <div class="project hidden_project" style="padding: 0px 0px;">
                 <img class="project_img" src="./img/Andreino.gif" alt="Error Loading Image">
                 <div class="project_info" id="project4">
                     <p class="title_project">
-                        Line Follower Arduino
+                        This Portfolio Website
                     </p>
-                    <p class="technology_used">
-                        Arduino
-                    </p>
+
+                    <div class="technology_used">
+                        <p class="single_technology_used">
+                            HTML
+                        </p>
+                        <p class="single_technology_used">
+                            CSS
+                        </p>
+                        <p class="single_technology_used">
+                            Javascript
+                        </p>
+                        <p class="single_technology_used">
+                            Media-Query
+                        </p>
+                    </div>
+
                     <p class="project_description">
                         - Led a team of software developer to build a clean and organized code. <br>
                         - Designed and built a car, and developed embedded system using the Arduino micro-controller
