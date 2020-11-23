@@ -18,9 +18,10 @@
 
     --project-text-shadow-length: 5px;
 
-    --project1-primary-bg: rgb(0,150,255);
-    --project2-primary-bg: rgb(0,255,124);
-    --project3-primary-bg: rgb(255,185,0);
+    --project1-primary-bg: rgb(0, 150, 255);
+    --project2-primary-bg: rgb(0, 255, 124);
+    --project3-primary-bg: rgb(255, 185, 0);
+    --project4-primary-bg: rgb(85, 58, 190);
 
     --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
@@ -434,6 +435,10 @@ button:hover {
     border-color: var(--project1-primary-bg);
 }
 
+#project1 .technology_used .single_technology_used span{
+    text-shadow: 1px 1px var(--project1-primary-bg), -1px -1px #444;
+}
+
 #project1 button {
     background: var(--project1-primary-bg);
     filter: brightness(70%);
@@ -449,6 +454,10 @@ button:hover {
 
 #project2 .technology_used .single_technology_used{
     border-color: var(--project2-primary-bg);
+}
+
+#project2 .technology_used .single_technology_used span{
+    text-shadow: 1px 1px var(--project2-primary-bg), -1px -1px #444;
 }
 
 #project2 button {
@@ -468,12 +477,37 @@ button:hover {
     border-color: var(--project3-primary-bg);
 }
 
+#project3 .technology_used .single_technology_used span{
+    text-shadow: 1px 1px var(--project3-primary-bg), -1px -1px #444;
+}
+
 #project3 button {
     background: var(--project3-primary-bg);
     filter: brightness(70%);
 }
 
 #project3 button:hover {
+    filter: brightness(105%);
+}
+
+#project4 .title_project {
+    color: var(--project4-primary-bg);
+ }
+
+#project4 .technology_used .single_technology_used{
+    border-color: var(--project4-primary-bg);
+}
+
+#project4 .technology_used .single_technology_used span{
+    text-shadow: 1px 1px var(--project4-primary-bg), -1px -1px #444;
+}
+
+#project4 button {
+    background: var(--project4-primary-bg);
+    filter: brightness(70%);
+}
+
+#project4 button:hover {
     filter: brightness(105%);
 }
 
@@ -502,7 +536,7 @@ button:hover {
     display: flex;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 #contacts_section {
