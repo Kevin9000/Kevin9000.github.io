@@ -8,7 +8,7 @@
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
-    --main-container-width: 80%;
+    --main-container-width: 85%;
     --padding-between-elements: 100px;
 
     --first-section-color: #344031;
@@ -18,13 +18,21 @@
 
     --project-text-shadow-length: 5px;
 
-    --project1-primary-bg: rgb(0, 150, 255);
+    --project1-primary-bg: rgb(255, 185, 0);
     --project2-primary-bg: rgb(0, 255, 124);
-    --project3-primary-bg: rgb(255, 185, 0);
-    --project4-primary-bg: rgb(85, 58, 190);
+    --project3-primary-bg: rgb(0, 150, 255);
+    --project4-primary-bg: rgb(120, 86, 255);
 
     --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
+
+    /* Description font family */
+    --titlefont-family: serif;
+    --content-font-family: monospace;
+
+    --element-title-font-family: Georgia;
+    /* Used for buttons text and top/sub bar */
+    --button-font-family: Helvetica, Arial, sans-serif;
 
     --min-width-smartphone-breakpoint: 320px;
     --min-width-tablet-breakpoint: 600px;
@@ -63,7 +71,8 @@ button:hover {
     background-color: var(--primary-color);
     display: block;
     transition: background-color 300ms linear;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-family: var(--button-font-family);
 }
 
 #topnav i {
@@ -103,7 +112,7 @@ button:hover {
     display: none;
 }
 
-.subNavBar {
+#subNavBar {
     background-color: var(--primary-color);
     filter: brightness(150%);
     overflow-y: hidden;
@@ -112,13 +121,14 @@ button:hover {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    font-family: var(--button-font-family);
 }
 
-.subNavBar.addSubNavBarHeight {
+#subNavBar.addSubNavBarHeight {
     height: 10em;
 }
 
-.subNavBar a {
+#subNavBar a {
     padding: 8px 20px;
     text-decoration: none;
     color: #b8b7b7;
@@ -131,8 +141,11 @@ button:hover {
     font-size: 1.5em;
 }
 
-#sideBar h6 {
+#sibar_main_text {
+    font-size: 0.8em;
+    line-height: 25px;
     color: #7E7E7E;
+    font-family: var(--titlefont-family);
 }
 
 .sidenav-text {
@@ -143,7 +156,7 @@ button:hover {
 
     font-size: 0px;
     font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
+    font-family: var(--titlefont-family);
 
     transition: 0.2s;
 }
@@ -212,7 +225,7 @@ button:hover {
 .main_start_text #start_text_main {
     color: var(--primary-text-color);
     font-size: 2em;
-    font-family: serif;
+    font-family: var(--titlefont-family);
     letter-spacing: 3px;
 }
 
@@ -229,7 +242,7 @@ button:hover {
 .main_start_text #start_text_sub {
     font-size: 1em;
     line-height: 1.4em;
-    font-family: monospace;
+    font-family: var(--content-font-family);
     font-style: italic;
 
     color: var(--start-text-sub-title-color);
@@ -248,7 +261,7 @@ button:hover {
     transition: 0.5s;
     outline: none;
 
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--button-font-family);
     font-size: 0.65em;
     letter-spacing: 1px;
 }
@@ -277,7 +290,7 @@ button:hover {
     font-size: 2em;
     padding-bottom: 3em;
 
-    font-family: Georgia;
+    font-family: var(--element-title-font-family);
     letter-spacing: 3px;
     font-variant: small-caps;
     font-weight: normal;
@@ -343,6 +356,7 @@ button:hover {
     letter-spacing: 1px;
     font-size: 1em;
     font-weight: 300;
+    font-family: var(--content-font-family);
 }
 
 #projects_section {
@@ -370,8 +384,9 @@ button:hover {
 }
 
 .title_project{
+    font-family: var(--titlefont-family);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.7em;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589); 
     filter: brightness(140%);
 }
@@ -394,6 +409,7 @@ button:hover {
 .project_info .project_description {
     font-size: 1.1em;
     line-height: 1.8em;
+    font-family: var(--content-font-family);
 }
 
 .description_space {
@@ -413,13 +429,15 @@ button:hover {
 .project_info .utility_button button {
     width: 9em;
     height: 3.5em;
-    font-size: 1.0em;
     color: var(--primary-text-color);
     transition: 0.5s;
     border: none;
     border-radius: 5px;
     outline: none;
     justify-content: space-between;
+    font-size: 1.0em;
+    font-weight: bold;
+    font-family: var(--button-font-family);
 }
 
 .project_info .utility_button button:hover {
@@ -558,6 +576,7 @@ button:hover {
     border-right: 1px ridge var(--contacts-border-color);
     padding-bottom: var(--padding-between-elements);
     line-height: 30px;
+    font-family: var(--titlefont-family);
 }
 
 #contact_form label {
@@ -578,6 +597,7 @@ button:hover {
 #contact_form .submit_button {
     border: 1.5px solid #000000;
     color: var(--primary-text-color);
+    font-family: var(--button-font-family);
 }
 
 #contact_form .submit_button:hover {
@@ -592,13 +612,14 @@ button:hover {
 }
 
 #contact_info {
+    font-family: var(--titlefont-family);
     width: 50%;
     display: inline-block;
     vertical-align: top;
 }
 
 #contact_info p{
-    padding-left: 5px;
+    padding-left: 2em;
     height: 49.6%;
     display: flex;
     align-items: center;
@@ -618,6 +639,11 @@ button:hover {
 
     html {
         font-size: 8px;
+    }
+
+    #sibar_main_text {
+        font-size: 0.6em;
+        line-height: 20px;
     }
 
     #sideBar img {
@@ -643,6 +669,7 @@ button:hover {
 
     #about_me_section {
         padding: var(--padding-between-elements) 1.5em;
+        padding-top: calc(var(--padding-between-elements)/2);
     }
 
     #photo {
@@ -686,7 +713,7 @@ button:hover {
     }
 
     .project_info .utility_button button {
-        width: 7.0em;
+        width: 7.5em;
         height: 3em;
         font-size: 0.9em;
     }
@@ -721,11 +748,11 @@ button:hover {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .subNavBar {
+    #subNavBar {
         height: 0;
     }
 
-    .subNavBar b {
+    #subNavBar b {
         display: none
     }
 
@@ -756,7 +783,7 @@ button:hover {
     }
 
     .project_info .utility_button button {
-        width: 7.5em;
+        width: 7.7em;
         height: 3.5em;
         font-size: 0.9em;
     }
@@ -774,11 +801,11 @@ button:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-    .subNavBar {
+    #subNavBar {
         height: 0;
     }
 
-    .subNavBar b {
+    #subNavBar b {
         display: none
     }
 
