@@ -27,10 +27,10 @@
     --contacts-bg-color-focus: #a8a8a8;
 
     /* Description font family */
-    --titlefont-family: serif;
-    --content-font-family: monospace;
+    --titlefont-family: Arial, Helvetica, sans-serif;
+    --content-font-family: "Times New Roman", Times, serif;
 
-    --element-title-font-family: Georgia;
+    --element-title-font-family: Georgia, serif;
     /* Used for buttons text and top/sub bar */
     --button-font-family: Helvetica, Arial, sans-serif;
 
@@ -372,9 +372,11 @@ button:hover {
 
 .project_img{
     display: inline-block;
-    width: 23em;
-    height: 15em;
-    padding-top: 20px;
+    width: 25em;
+    height: 18em;
+    margin-top: 1.5em;
+    margin-left: 1em; 
+    margin-right: 2em;
 }
 
 .project_info{
@@ -386,7 +388,7 @@ button:hover {
 .title_project{
     font-family: var(--titlefont-family);
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.5em;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589); 
     filter: brightness(140%);
 }
@@ -672,7 +674,7 @@ footer a{
     }
 
     .elementTitle {
-        font-size: 1.3em;
+        font-size: 1.4em;
         letter-spacing: 1px;
     }
 
@@ -704,7 +706,7 @@ footer a{
 
     .project {
         display: block;
-        padding: 20px 30px;
+        padding: 40px 30px;
     }
 
     .project_info{
@@ -721,9 +723,11 @@ footer a{
 
     .project_img{
         display: inline-block;
-        width: 15em;
-        height: 10em;
-        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        margin-top: 0em;
+        margin-left: 0em; 
+        margin-right: 0em;
     }
 
     .project_info .utility_button button {
@@ -793,11 +797,18 @@ footer a{
         line-height: 1.4em;
     }
 
+    .project {
+        display: flex;
+        padding: 60px 40px;
+    }
+
     .project_img{
         display: inline-block;
-        width: 17em;
-        height: 12em;
-        padding-top: 5px;
+        width: 20em;
+        height: 15em;
+        margin-top: 2em;
+        margin-left: 0em; 
+        margin-right: 0em;
     }
 
     .project_info .utility_button button {
@@ -813,7 +824,7 @@ footer a{
     }
 
     .elementTitle {
-        font-size: 1.7em;
+        font-size: 1.9em;
         letter-spacing: 2px;
     }
 
