@@ -267,11 +267,12 @@
                 <div id="contact_form">
                     <form action="MAILTO:kevinwang9000@gmail.com" method="post">
                         <label for="fname">Name</label> <br>
-                        <input name="name" type="text" class="form_input" id="fname" placeholder="Insert Your Name"
-                            required>
+                        <input name="name" type="text" class="form_input" id="fname" placeholder="Insert Your Name" 
+                                oninvalid="this.setCustomValidity('Please Enter A Valid Name')" oninput="setCustomValidity('')" required>
                         <br><br><br>
                         <label for="fmessage">Message</label> <br>
-                        <textarea name="message" rows="15" class="form_input" id="fmessage" required></textarea>
+                        <textarea name="message" rows="15" class="form_input" id="fmessage" 
+                                  oninvalid="this.setCustomValidity('Please Enter A Valid Message')" oninput="setCustomValidity('')" required></textarea>
                         <br><br><br>
                         <input type="submit" class="form_input submit_button" value="SEND MESSAGE">
                     </form>

@@ -37,7 +37,6 @@ function closeNav() {
 }
 
 // if the show more button has been clicked, show or hide more projects (all those with hidden project class)
-
 function showHiddenProject() {
     document.getElementById("show_more_project_button").style.visibility = "hidden";
     document.getElementById("hide_project_button").style.visibility = "visible";
