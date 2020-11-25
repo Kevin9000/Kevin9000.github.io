@@ -1,3 +1,11 @@
+
+
+
+/* aggiungere un altro breakpoint per i telefoni grossi!!! */
+
+
+
+
 :root {
     --primary-text-color: #ffffff;
 
@@ -8,7 +16,12 @@
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
-    --main-container-width: 85%;
+    --main-container-border-radius-mobile: 5px;
+    --main-container-border-radius-ipad: 20px;
+    --main-container-border-radius-pc: 40px;
+
+    --main-container-width-pc: 80%;
+    --main-container-width-mobiles: 85%;
     --padding-between-elements: 100px;
 
     --first-section-color: #344031;
@@ -299,10 +312,12 @@ button:hover {
 }
 
 #mainComponent {
+    border: 1px solid #000000ce;
+    border-radius: var(--main-container-border-radius-pc);
     display: absolute;
     background-color: white;
     margin: auto;
-    width: var(--main-container-width);
+    width: var(--main-container-width-pc);
     font-size: 1.7em;
 }
 
@@ -323,7 +338,7 @@ button:hover {
 .elementTitle:after {
     content: "";
     display: inline-block;
-    width: calc(var(--main-container-width)/3);
+    width: calc(var(--main-container-width-pc)/3);
     margin: 0 2em 0 -55%;
     vertical-align: middle;
     border-bottom: 1px solid;
@@ -335,6 +350,8 @@ button:hover {
 }
 
 #about_me_section {
+    border-bottom: 1px solid #00000059;
+    border-radius: var(--main-container-border-radius-pc) var(--main-container-border-radius-pc) 0 0;
     padding: var(--padding-between-elements) 5em;
     background: linear-gradient(to top left, var(--first-section-color) 0%, var(--second-section-color) 100%);
     color: var(--primary-text-color);
@@ -383,6 +400,7 @@ button:hover {
 }
 
 #projects_section {
+    border-bottom: 1px solid #00000000;
     padding: var(--padding-between-elements) 0px;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
@@ -395,11 +413,11 @@ button:hover {
 
 .project_img{
     display: inline-block;
-    width: 25em;
+    width: 23em;
     height: 18em;
     margin-top: 1.5em;
-    margin-left: 1em; 
-    margin-right: 2em;
+    margin-left: 0.5em; 
+    margin-right: 1.5em;
 }
 
 .project_info{
@@ -583,6 +601,7 @@ button:hover {
 }
 
 #contacts_section {
+    border-radius: 0 0 var(--main-container-border-radius-pc) var(--main-container-border-radius-pc);
     padding-top: var(--padding-between-elements);
     background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
@@ -650,6 +669,7 @@ button:hover {
     align-items: center;
     vertical-align: middle;
     border: 1px solid var(--contacts-border-color);
+    border-radius: 0 0 var(--main-container-border-radius-pc) 0;
 }
 
 footer{
@@ -667,6 +687,7 @@ footer a{
     filter: brightness(150%);
 }
 
+/* Mobile phones */
 @media only screen and (max-width: 767px) {
     #element {
         display: none;
@@ -703,12 +724,18 @@ footer a{
 
     .elementTitle:before,
     .elementTitle:after {
-        width: calc(var(--main-container-width)/4.5);
+        width: calc(var(--main-container-width-mobiles)/4.5);
+    }
+
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-mobile);
+        width: var(--main-container-width-mobiles);
     }
 
     #about_me_section {
         padding: var(--padding-between-elements) 1.5em;
         padding-top: calc(var(--padding-between-elements)/2);
+        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
     }
 
     #photo {
@@ -759,6 +786,10 @@ footer a{
         font-size: 0.9em;
     }
 
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
+    }
+
     #contact_description {
         display: block;
     }
@@ -784,6 +815,7 @@ footer a{
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
     footer{
@@ -792,6 +824,7 @@ footer a{
     }
 }
 
+/* Ipads */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     /* Scrollbar width */
     ::-webkit-scrollbar {
@@ -814,8 +847,19 @@ footer a{
         padding: 0px 50px;
     }
 
+    .elementTitle {
+        font-size: 1.9em;
+        letter-spacing: 2px;
+    }
+
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-ipad);
+        width: var(--main-container-width-mobiles);
+    }
+
     #about_me_section {
         padding: var(--padding-between-elements) 2.5em;
+        border-radius: var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad) 0 0;
     }
 
     .about_me_description {
@@ -851,9 +895,13 @@ footer a{
         padding-left: 2em;
     }
 
-    .elementTitle {
-        font-size: 1.9em;
-        letter-spacing: 2px;
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad);
+    }
+
+    #contact_info p{
+        padding-bottom: 1px;
+        border-radius: 0 0 var(--main-container-border-radius-ipad) 0;
     }
 
     footer{
@@ -862,6 +910,7 @@ footer a{
     }
 }
 
+/* PCs */
 @media only screen and (min-width: 1200px) {
     #subNavBar {
         height: 0;
