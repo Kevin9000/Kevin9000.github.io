@@ -1,6 +1,6 @@
 # Wang Kevin's Portfolio
 ![]() <br />
-A Portfolio Website
+A Web page (portfolio) that has the job to show off my main projects.
 
 ## Table of Contents
 * [About The Project](#about-the-project)  <br />
@@ -10,7 +10,11 @@ A Portfolio Website
 * [Contact](#contact)  
 
 ## About The Project
-A Web page (portfolio) that has the job to show off my main projects.          
+Features:
+  - Designed and developed a website with the purpose to show off my projects to the public.
+  - Styled every element of the page to greatly improve the UI.
+  - Made use of media query to make the page responsive, so that all type of devices could enjoy the page.
+  - Increased the loading speed of the page by replacing all gifs with a lighter format.
 
 ## Technologies
 * HTML5 & CSS
