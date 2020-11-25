@@ -532,8 +532,8 @@ button:hover {
 }
 
 .show_hide_project_buttons {
-    position: absolute;
-    left: 50%;
+    display:block;
+    margin:auto;
     background-color: #00000000;
     border: none;
     outline: none;
