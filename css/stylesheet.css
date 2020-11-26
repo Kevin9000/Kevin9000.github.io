@@ -1,17 +1,9 @@
-
-
-
-/* aggiungere un altro breakpoint per i telefoni grossi!!! */
-
-
-
-
 :root {
     --primary-text-color: #ffffff;
 
     --primary-color: rgb(12, 35, 105);
     --sub-color: rgb(246, 76, 114);
-    
+
     --start-text-sub-title-color: #42AA7A;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
@@ -82,7 +74,7 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
 }
- 
+
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, .5);
@@ -92,7 +84,7 @@ body {
 
 /* Scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555;
 }
 
 button:hover {
@@ -411,37 +403,37 @@ button:hover {
     padding: 100px 70px;
 }
 
-.project_img{
+.project_img {
     display: inline-block;
     width: 23em;
     height: 18em;
     margin-top: 1.5em;
-    margin-left: 0.5em; 
+    margin-left: 0.5em;
     margin-right: 1.5em;
 }
 
-.project_info{
+.project_info {
     width: 100%;
     margin: 0px;
     padding-left: 4em;
 }
 
-.title_project{
+.title_project {
     font-family: var(--titlefont-family);
     font-weight: bold;
     font-size: 1.5em;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589); 
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
     filter: brightness(140%);
 }
 
 .project_info .technology_used {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .single_technology_used {
     font-size: 0.9em;
     display: inline-block;
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 0.3em 1em;
@@ -465,7 +457,7 @@ button:hover {
     padding-top: 30px;
 }
 
-.project_info .utility_button a{
+.project_info .utility_button a {
     text-decoration: none;
 }
 
@@ -490,13 +482,13 @@ button:hover {
 
 #project1 .title_project {
     color: var(--project1-primary-bg);
- }
+}
 
-#project1 .technology_used .single_technology_used{
+#project1 .technology_used .single_technology_used {
     border-color: var(--project1-primary-bg);
 }
 
-#project1 .technology_used .single_technology_used span{
+#project1 .technology_used .single_technology_used span {
     text-shadow: 1px 1px var(--project1-primary-bg), -1px -1px #444;
 }
 
@@ -511,13 +503,13 @@ button:hover {
 
 #project2 .title_project {
     color: var(--project2-primary-bg);
- }
+}
 
-#project2 .technology_used .single_technology_used{
+#project2 .technology_used .single_technology_used {
     border-color: var(--project2-primary-bg);
 }
 
-#project2 .technology_used .single_technology_used span{
+#project2 .technology_used .single_technology_used span {
     text-shadow: 1px 1px var(--project2-primary-bg), -1px -1px #444;
 }
 
@@ -532,13 +524,13 @@ button:hover {
 
 #project3 .title_project {
     color: var(--project3-primary-bg);
- }
+}
 
-#project3 .technology_used .single_technology_used{
+#project3 .technology_used .single_technology_used {
     border-color: var(--project3-primary-bg);
 }
 
-#project3 .technology_used .single_technology_used span{
+#project3 .technology_used .single_technology_used span {
     text-shadow: 1px 1px var(--project3-primary-bg), -1px -1px #444;
 }
 
@@ -553,13 +545,13 @@ button:hover {
 
 #project4 .title_project {
     color: var(--project4-primary-bg);
- }
+}
 
-#project4 .technology_used .single_technology_used{
+#project4 .technology_used .single_technology_used {
     border-color: var(--project4-primary-bg);
 }
 
-#project4 .technology_used .single_technology_used span{
+#project4 .technology_used .single_technology_used span {
     text-shadow: 1px 1px var(--project4-primary-bg), -1px -1px #444;
 }
 
@@ -573,16 +565,35 @@ button:hover {
 }
 
 .show_hide_project_buttons {
-    display:block;
-    margin:auto;
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
     background-color: #00000000;
     border: none;
     outline: none;
     transition: 0.4s;
+    opacity: 0.5;
 }
 
-.show_hide_project_buttons:hover {
-    color: red;
+.show_hide_project_buttons:hover span {
+    border-color: red;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 #show_more_project_button {
@@ -662,7 +673,7 @@ button:hover {
     vertical-align: top;
 }
 
-#contact_info p{
+#contact_info p {
     padding-left: 2em;
     height: 49.6%;
     display: flex;
@@ -672,17 +683,17 @@ button:hover {
     border-radius: 0 0 var(--main-container-border-radius-pc) 0;
 }
 
-footer{
+footer {
     font-size: 1.5em;
     font-weight: bolder;
-    color: rgba(82, 56, 56, 0.7); 
+    color: rgba(82, 56, 56, 0.7);
     margin-top: 5em;
     margin-bottom: 2em;
     text-align: center;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589); 
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
 }
 
-footer a{
+footer a {
     color: inherit;
     filter: brightness(150%);
 }
@@ -759,24 +770,24 @@ footer a{
         padding: 40px 30px;
     }
 
-    .project_info{
+    .project_info {
         width: 100%;
         margin: 0px;
         padding-left: 0em;
     }
 
-    .title_project{
+    .title_project {
         padding-top: 30px;
         font-weight: bold;
         font-size: 1.3em;
     }
 
-    .project_img{
+    .project_img {
         display: inline-block;
         width: 100%;
         height: 100%;
         margin-top: 0em;
-        margin-left: 0em; 
+        margin-left: 0em;
         margin-right: 0em;
     }
 
@@ -808,8 +819,8 @@ footer a{
         width: 100%;
         display: block;
     }
-    
-    #contact_info p{
+
+    #contact_info p {
         padding-left: 2em;
         height: 100px;
         align-items: center;
@@ -818,7 +829,7 @@ footer a{
         border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
-    footer{
+    footer {
         font-size: 0.8em;
         font-weight: bold;
     }
@@ -826,6 +837,7 @@ footer a{
 
 /* Ipads */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+
     /* Scrollbar width */
     ::-webkit-scrollbar {
         width: 8px;
@@ -874,12 +886,12 @@ footer a{
         padding: 60px 40px;
     }
 
-    .project_img{
+    .project_img {
         display: inline-block;
         width: 20em;
         height: 15em;
         margin-top: 2em;
-        margin-left: 0em; 
+        margin-left: 0em;
         margin-right: 0em;
     }
 
@@ -889,7 +901,7 @@ footer a{
         font-size: 0.9em;
     }
 
-    .project_info{
+    .project_info {
         width: 100%;
         margin: 0px;
         padding-left: 2em;
@@ -899,12 +911,12 @@ footer a{
         border-radius: 0 0 var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad);
     }
 
-    #contact_info p{
+    #contact_info p {
         padding-bottom: 1px;
         border-radius: 0 0 var(--main-container-border-radius-ipad) 0;
     }
 
-    footer{
+    footer {
         font-size: 1.2em;
         font-weight: bold;
     }
