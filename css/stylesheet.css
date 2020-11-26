@@ -393,7 +393,6 @@ button:hover {
 
 #projects_section {
     border-bottom: 1px solid #00000000;
-    padding: var(--padding-between-elements) 0px;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
 }
@@ -567,7 +566,7 @@ button:hover {
 .show_hide_project_buttons {
     display: block;
     width: 100%;
-    padding: 20px 0px;
+    padding: 30px 0px;
     background-color: #00000000;
     border: none;
     outline: none;
@@ -575,8 +574,12 @@ button:hover {
     opacity: 0.5;
 }
 
+.show_hide_project_buttons:hover {
+    background-color: #00000036;
+}
+
 .show_hide_project_buttons:hover span {
-    border-color: red;
+    border-color: #d31a1a;
 }
 
 .arrow {
@@ -597,11 +600,16 @@ button:hover {
 }
 
 #show_more_project_button {
+    /* add more space between the button (when shown) and the project (it is added/deducted via JS) */
+    margin-top: 50px;
     visibility: visible;
 }
 
 #hide_project_button {
+    /* add more space between the button (when shown) and the project (it is added/deducted via JS) */
+    margin-top: 0px;
     visibility: hidden;
+    display: none;
 }
 
 .hidden_project {

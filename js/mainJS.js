@@ -39,7 +39,10 @@ function closeNav() {
 // if the show more button has been clicked, show or hide more projects (all those with hidden project class)
 function showHiddenProject() {
     document.getElementById("show_more_project_button").style.visibility = "hidden";
+    document.getElementById("show_more_project_button").style.marginTop = "0px";
     document.getElementById("hide_project_button").style.visibility = "visible";
+    document.getElementById("hide_project_button").style.display = "block";
+    document.getElementById("hide_project_button").style.marginTop = "50px";
 
     document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + "px";
     document.querySelector(".hidden_project").style.padding =  window.getComputedStyle(document.querySelector(".project")).padding;
@@ -47,7 +50,10 @@ function showHiddenProject() {
 
 function hideHiddenProject() {
     document.getElementById("show_more_project_button").style.visibility = "visible";
+    document.getElementById("show_more_project_button").style.marginTop = "50px";
     document.getElementById("hide_project_button").style.visibility = "hidden";
+    document.getElementById("hide_project_button").style.display = "none";
+    document.getElementById("hide_project_button").style.marginTop = "0px";
 
     document.querySelector(".hidden_project").style.maxHeight = "0px";
     document.querySelector(".hidden_project").style.padding =  "0px 0px";
