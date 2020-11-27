@@ -1,4 +1,5 @@
-/* Aggiungere un breakpoint, fix mobile per bottone showmore */
+/* Aggiungere un breakpoint */
+/*rimuovere tooltip ipad*/
 :root {
     --primary-text-color: #ffffff;
 
@@ -826,6 +827,10 @@ footer a {
         font-size: 0.9em;
     }
 
+    .tooltiptext {
+        display: none;
+    }
+
     #contacts_section {
         border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
@@ -934,6 +939,10 @@ footer a {
         width: 100%;
         margin: 0px;
         padding-left: 2em;
+    }
+
+    .tooltiptext {
+        display: none;
     }
 
     #contacts_section {

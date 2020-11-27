@@ -44,8 +44,9 @@ function showHiddenProject() {
   document.getElementById("show_more_project_button").style.marginTop = "0px";
   document.getElementById("hide_project_button").style.visibility = "visible";
   document.getElementById("hide_project_button").style.display = "block";
-  document.getElementById("hide_project_button").style.marginTop = "50px";
-  document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + "px";
+  document.getElementById("hide_project_button").style.marginTop = "50px"; // add extra max height in case the div gets cut
+
+  document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + 500 + "px";
   document.querySelector(".hidden_project").style.padding = window.getComputedStyle(document.querySelector(".project")).padding;
 }
 
