@@ -1,4 +1,4 @@
-/* Aggiungere un breakpoint */
+/*get a divider between project*/
 :root {
     --primary-text-color: #ffffff;
 
@@ -402,11 +402,10 @@ button:hover {
 
 .project_img {
     display: inline-block;
-    width: 23em;
-    height: 18em;
+    width: 24em;
+    height: 17em;
     margin-top: 1.5em;
-    margin-left: 0.5em;
-    margin-right: 1.5em;
+    margin-right: 1.0em;
 }
 
 .project_info {
