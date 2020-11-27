@@ -1,5 +1,4 @@
 /* Aggiungere un breakpoint */
-/*rimuovere tooltip ipad*/
 :root {
     --primary-text-color: #ffffff;
 
@@ -40,10 +39,6 @@
     --element-title-font-family: Georgia, serif;
     /* Used for buttons text and top/sub bar */
     --button-font-family: Helvetica, Arial, sans-serif;
-
-    --min-width-smartphone-breakpoint: 320px;
-    --min-width-tablet-breakpoint: 600px;
-    --min-width-pc-breakpoint: 1281px;
 }
 
 html {
@@ -394,6 +389,7 @@ button:hover {
 }
 
 #projects_section {
+    padding-top: var(--padding-between-elements);
     border-bottom: 1px solid #00000000;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
@@ -729,7 +725,7 @@ footer a {
 }
 
 /* Mobile phones */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     #element {
         display: none;
     }
@@ -865,6 +861,147 @@ footer a {
 
     footer {
         font-size: 0.8em;
+        font-weight: bold;
+    }
+}
+
+/* Large Mobile phones */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    #element {
+        display: none;
+    }
+
+    #opennavbtn {
+        display: block;
+    }
+
+    html {
+        font-size: 9px;
+    }
+
+    #sibar_main_text {
+        font-size: 0.7em;
+        line-height: 25px;
+    }
+
+    #sideBar img {
+        width: 1.5em;
+        height: 1.5em;
+        padding: 1.0em;
+    }
+
+    .main_start_text {
+        margin: 0px 30px;
+        font-size: 1.7em;
+    }
+
+    .elementTitle {
+        font-size: 1.7em;
+        letter-spacing: 1px;
+    }
+
+    .elementTitle:before,
+    .elementTitle:after {
+        width: calc(var(--main-container-width-mobiles)/4);
+    }
+
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-mobile);
+        width: var(--main-container-width-mobiles);
+    }
+
+    #about_me_section {
+        padding: var(--padding-between-elements) 4em;
+        padding-top: calc(var(--padding-between-elements)/2);
+        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
+    }
+
+    #photo {
+        margin-bottom: 40px;
+    }
+
+    #about_me_info {
+        display: block;
+        padding: 20px 0em;
+    }
+
+    .about_me_description {
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 1.0em;
+        line-height: 1.3em;
+    }
+
+    .project {
+        display: block;
+        padding: 40px 60px;
+    }
+
+    .project_info {
+        width: 100%;
+        margin: 0px;
+        padding-left: 0em;
+    }
+
+    .title_project {
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    .project_img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    .project_info .utility_button button {
+        width: 9em;
+        height: 3.5em;
+        font-size: 1.0em;
+    }
+
+    .tooltiptext {
+        display: none;
+    }
+
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
+    }
+
+    #contact_description {
+        display: block;
+    }
+
+    #contact_form {
+        display: block;
+        align-items: center;
+        /* the width is given by 100% width minus all the paddings added */
+        width: calc(calc(100% - 2em) - 20px);
+        padding-bottom: var(--padding-between-elements);
+        padding-left: 2em;
+        line-height: 30px;
+    }
+
+    #contact_info {
+        width: 100%;
+        display: block;
+    }
+
+    #contact_info p {
+        padding-left: 2em;
+        height: 100px;
+        align-items: center;
+        vertical-align: middle;
+        border: 1px solid var(--contacts-border-color);
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
+    }
+
+    footer {
+        font-size: 1.0em;
         font-weight: bold;
     }
 }
