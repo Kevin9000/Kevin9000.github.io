@@ -432,7 +432,7 @@ button:hover {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 0.3em 1em;
+    padding: 0.4em 1em;
     border: 1px dotted;
     border-radius: 45%;
 }
@@ -807,6 +807,18 @@ footer a {
         font-size: 1.3em;
     }
 
+    .project_info .technology_used {
+        margin-left: 10px;
+    }
+    
+    .single_technology_used {
+        font-size: 0.7em;
+        margin-left: 7px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0.3em 0.8em;
+    }
+
     .project_img {
         display: inline-block;
         width: 100%;
@@ -948,6 +960,18 @@ footer a {
         font-size: 1.6em;
     }
 
+    .project_info .technology_used {
+        margin-left: 15px;
+    }
+    
+    .single_technology_used {
+        font-size: 0.8em;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0.4em 1em;
+    }
+
     .project_img {
         display: inline-block;
         width: 100%;
@@ -1054,6 +1078,18 @@ footer a {
     .project {
         display: flex;
         padding: 60px 40px;
+    }
+
+    .project_info .technology_used {
+        margin-left: 15px;
+    }
+    
+    .single_technology_used {
+        font-size: 0.8em;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0.4em 1em;
     }
 
     .project_img {
