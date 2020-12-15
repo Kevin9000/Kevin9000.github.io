@@ -1,4 +1,5 @@
 /*get a divider between project*/
+/*modify tratteggio titolo*/
 :root {
     --primary-text-color: #ffffff;
 
@@ -9,12 +10,6 @@
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
-    --main-container-border-radius-mobile: 5px;
-    --main-container-border-radius-ipad: 20px;
-    --main-container-border-radius-pc: 40px;
-
-    --main-container-width-pc: 80%;
-    --main-container-width-mobiles: 85%;
     --padding-between-elements: 100px;
 
     --first-section-color: #344031;
@@ -94,10 +89,15 @@ button:hover {
     width: 100%;
     overflow: hidden;
     background-color: var(--primary-color);
+    opacity: 0.95;
     display: block;
     transition: background-color 300ms linear;
     font-size: 1.6em;
     font-family: var(--button-font-family);
+}
+
+#topnav #topnav_symbol{
+    margin-left: 1em;
 }
 
 #topnav i {
@@ -302,11 +302,9 @@ button:hover {
 
 #mainComponent {
     border: 1px solid #000000ce;
-    border-radius: var(--main-container-border-radius-pc);
     display: absolute;
     background-color: white;
     margin: auto;
-    width: var(--main-container-width-pc);
     font-size: 1.7em;
 }
 
@@ -327,7 +325,7 @@ button:hover {
 .elementTitle:after {
     content: "";
     display: inline-block;
-    width: calc(var(--main-container-width-pc)/3);
+    width: 2em;
     margin: 0 2em 0 -55%;
     vertical-align: middle;
     border-bottom: 3px double;
@@ -340,7 +338,6 @@ button:hover {
 
 #about_me_section {
     border-bottom: 1px solid #00000059;
-    border-radius: var(--main-container-border-radius-pc) var(--main-container-border-radius-pc) 0 0;
     padding: var(--padding-between-elements) 5em;
     background: linear-gradient(to top left, var(--first-section-color) 0%, var(--second-section-color) 100%);
     color: var(--primary-text-color);
@@ -444,9 +441,12 @@ button:hover {
 }
 
 .description_space {
-    padding-left: 2em;
+    padding-left: 2.5em;
+    padding-top: 1.5em;
     font-size: 1.0em;
     line-height: 1.5em;
+    opacity: 0.9;
+    font-family: var(--content-font-family);
 }
 
 .project_info .utility_button {
@@ -637,7 +637,6 @@ button:hover {
 }
 
 #contacts_section {
-    border-radius: 0 0 var(--main-container-border-radius-pc) var(--main-container-border-radius-pc);
     padding-top: var(--padding-between-elements);
     background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
     color: var(--primary-text-color);
@@ -705,7 +704,6 @@ button:hover {
     align-items: center;
     vertical-align: middle;
     border: 1px solid var(--contacts-border-color);
-    border-radius: 0 0 var(--main-container-border-radius-pc) 0;
 }
 
 footer {
@@ -760,18 +758,12 @@ footer a {
 
     .elementTitle:before,
     .elementTitle:after {
-        width: calc(var(--main-container-width-mobiles)/4.5);
-    }
-
-    #mainComponent {
-        border-radius: var(--main-container-border-radius-mobile);
-        width: var(--main-container-width-mobiles);
+        width: 2em;
     }
 
     #about_me_section {
         padding: var(--padding-between-elements) 1.5em;
         padding-top: calc(var(--padding-between-elements)/2);
-        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
     }
 
     #photo {
@@ -838,10 +830,6 @@ footer a {
         display: none;
     }
 
-    #contacts_section {
-        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
-    }
-
     #contact_description {
         display: block;
     }
@@ -867,7 +855,6 @@ footer a {
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
-        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
     footer {
@@ -913,18 +900,12 @@ footer a {
 
     .elementTitle:before,
     .elementTitle:after {
-        width: calc(var(--main-container-width-mobiles)/4);
-    }
-
-    #mainComponent {
-        border-radius: var(--main-container-border-radius-mobile);
-        width: var(--main-container-width-mobiles);
+        width: 2em;
     }
 
     #about_me_section {
         padding: var(--padding-between-elements) 4em;
         padding-top: calc(var(--padding-between-elements)/2);
-        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
     }
 
     #photo {
@@ -991,10 +972,6 @@ footer a {
         display: none;
     }
 
-    #contacts_section {
-        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
-    }
-
     #contact_description {
         display: block;
     }
@@ -1020,7 +997,6 @@ footer a {
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
-        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
     footer {
@@ -1058,14 +1034,8 @@ footer a {
         letter-spacing: 2px;
     }
 
-    #mainComponent {
-        border-radius: var(--main-container-border-radius-ipad);
-        width: var(--main-container-width-mobiles);
-    }
-
     #about_me_section {
         padding: var(--padding-between-elements) 2.5em;
-        border-radius: var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad) 0 0;
     }
 
     .about_me_description {
@@ -1117,13 +1087,8 @@ footer a {
         display: none;
     }
 
-    #contacts_section {
-        border-radius: 0 0 var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad);
-    }
-
     #contact_info p {
         padding-bottom: 1px;
-        border-radius: 0 0 var(--main-container-border-radius-ipad) 0;
     }
 
     footer {
