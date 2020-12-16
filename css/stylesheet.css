@@ -1,16 +1,16 @@
 /*get a divider between project*/
 :root {
     /* darkest color */
-    --color1: #8e9aaf;
+    --color1: #1d3557;
     /* lighter shade of darkest color */
-    --color2: #cbc0d3;
-    
-    --color3: #efd3d7;
+    --color2: #457b9d;
+
+    --color3: #e63946;
 
     /* primary text color for titles */
-    --color4: #feeafa;
+    --color4: #a8dadc;
     /* secondary text color for description (has lighter shade) */
-    --color5: #dee2ff;
+    --color5: #f1faee;
 
     --start-text-sub-title-color: #42AA7A;
 
@@ -110,33 +110,33 @@ button:hover {
 }
 
 #topnav #topnav_symbol{
-    margin-left: 1em;
-}
-
-#topnav i {
     float: left;
-    color: var(--color4);
+    color: var(--color1);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 1.3em;
+    margin-left: 2em;
+    font-weight: bold;
 }
 
 #element a {
     float: right;
-    color: var(--color4);
+    color: var(--color1);
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 #element a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--color5);
+    color: var(--color4);
 }
 
 #element a:active {
-    background-color: #141614;
+    background-color: var(--color3);
     color: var(--color4);
 }
 
@@ -241,9 +241,7 @@ button:hover {
 }
 
 #main_start_text #start_text_main {
-    color: var(--color4);
     font-size: 2em;
-    font-family: var(--titlefont-family);
     letter-spacing: 3px;
 }
 
@@ -260,9 +258,7 @@ button:hover {
 #main_start_text #start_text_sub {
     font-size: 1em;
     line-height: 1.4em;
-    font-family: var(--content-font-family);
     font-style: italic;
-    color: var(--color5);
 }
 
 #main_start_text #start_text_button {
@@ -357,12 +353,13 @@ button:hover {
 
 #about_me_maintext {
     font-size: 1.6em;
-    font-weight: 800;
 }
 
 .main_text {
     color: var(--color4);
     font-family: var(--titlefont-family);
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
 }
 
 #about_me_sub_info {
@@ -377,11 +374,10 @@ button:hover {
     line-height: 1.8em;
     letter-spacing: 1px;
     font-size: 1em;
-    font-weight: 300;
 }
 
 .sub_text {
-    color: var(--color4);
+    color: var(--color5);
     font-family: var(--content-font-family);
 }
 
@@ -412,10 +408,7 @@ button:hover {
 }
 
 .title_project {
-    font-weight: bold;
-    font-size: 1.5em;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
-    filter: brightness(140%);
+    font-size: 1.6em;
 }
 
 .project_info .technology_used {
@@ -620,7 +613,7 @@ button:hover {
     border-radius: 0 0 var(--main-container-border-radius-pc) var(--main-container-border-radius-pc);
     padding-top: var(--padding-between-elements);
     background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
-    color: var(--color4);
+    color: var(--color1);
 }
 
 #contact_description {
@@ -646,8 +639,7 @@ button:hover {
 .form_input {
     width: 80%;
     padding: 20px 20px;
-    background-color: var(--third-section-color);
-    border: 2px groove var(--contacts-border-color);
+    border: 3px groove var(--contacts-border-color);
 }
 
 .form_input:focus {
@@ -655,16 +647,16 @@ button:hover {
 }
 
 #contact_form .submit_button {
-    border: 1.5px solid #000000;
-    color: var(--color4);
+    border: 3px groove var(--contacts-border-color);
+    color: var(--color1);
     font-family: var(--button-font-family);
 }
 
 #contact_form .submit_button:hover {
     cursor: pointer;
     transition: 0.2s;
-    color: #2583b9;
-    border: 2px groove #2583b9;
+    color: var(--color2);
+    border: 2px groove var(--color2);;
 }
 
 #contact_form .submit_button[value] {
@@ -691,11 +683,10 @@ button:hover {
 footer {
     font-size: 1.5em;
     font-weight: bolder;
-    color: rgba(82, 56, 56, 0.7);
+    color: var(--color2);
     margin-top: 5em;
     margin-bottom: 2em;
     text-align: center;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
 }
 
 footer a {
