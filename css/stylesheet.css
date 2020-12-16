@@ -1,21 +1,30 @@
 /*get a divider between project*/
-/*modify tratteggio titolo*/
 :root {
-    --primary-text-color: #ffffff;
-
-    --primary-color: rgb(12, 35, 105);
-    --sub-color: rgb(246, 76, 114);
+    /* darkest color */
+    --color1: #8e9aaf;
+    /* lighter shade of darkest color */
+    --color2: #cbc0d3;
+    --color3: #efd3d7;
+    /* primary text color */
+    --color4: #feeafa;
+    --color5: #dee2ff;
 
     --start-text-sub-title-color: #42AA7A;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
+    --main-container-border-radius-mobile: 5px;
+    --main-container-border-radius-ipad: 20px;
+    --main-container-border-radius-pc: 40px;
+
+    --main-container-width-pc: 80%;
+    --main-container-width-mobiles: 85%;
     --padding-between-elements: 100px;
 
-    --first-section-color: #344031;
-    --second-section-color: #57784E;
-    --third-section-color: #497169;
-    --fourth-section-color: #313A3E;
+    --first-section-color: var(--color1);
+    --second-section-color: white;
+    --third-section-color: white;
+    --fourth-section-color: var(--color1);
 
     --project-text-shadow-length: 5px;
 
@@ -45,7 +54,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -88,7 +97,8 @@ button:hover {
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    background-color: var(--primary-color);
+    background-color: var(--color2);
+    border-bottom: 2px var(--color1) solid;
     opacity: 0.95;
     display: block;
     transition: background-color 300ms linear;
@@ -102,7 +112,7 @@ button:hover {
 
 #topnav i {
     float: left;
-    color: var(--primary-text-color);
+    color: var(--color4);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -111,7 +121,7 @@ button:hover {
 
 #element a {
     float: right;
-    color: var(--primary-text-color);
+    color: var(--color4);
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
@@ -123,13 +133,13 @@ button:hover {
 }
 
 #element a:active {
-    background-color: #4CAF50;
-    color: var(--primary-text-color);
+    background-color: #141614;
+    color: var(--color4);
 }
 
 #opennavbtn {
-    background-color: var(--primary-color);
-    color: var(--primary-text-color);
+    background-color: var(--color1);
+    color: var(--color4);
     font-size: 20px;
     float: right;
     padding: 10px 15px;
@@ -138,7 +148,7 @@ button:hover {
 }
 
 #subNavBar {
-    background-color: var(--primary-color);
+    background-color: var(--color1);
     filter: brightness(150%);
     overflow-y: hidden;
     height: 0px;
@@ -240,22 +250,22 @@ button:hover {
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-.main_start_text {
+#main_start_text {
     padding-top: 30vh;
-    padding-bottom: 60vh;
+    padding-bottom: 50vh;
     text-align: center;
     font-size: 2em;
 }
 
-.main_start_text #start_text_main {
-    color: var(--primary-text-color);
+#main_start_text #start_text_main {
+    color: var(--color4);
     font-size: 2em;
     font-family: var(--titlefont-family);
     letter-spacing: 3px;
 }
 
-.main_start_text #start_text_divider {
-    border-color: var(--primary-color);
+#main_start_text #start_text_divider {
+    border-color: var(--color1);
     filter: brightness(200%);
     max-width: 3em;
     border-width: 1.5px;
@@ -264,25 +274,22 @@ button:hover {
     margin-bottom: 0.6em;
 }
 
-.main_start_text #start_text_sub {
+#main_start_text #start_text_sub {
     font-size: 1em;
     line-height: 1.4em;
     font-family: var(--content-font-family);
     font-style: italic;
-
-    color: var(--start-text-sub-title-color);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #253E45;
+    color: var(--color5);
 }
 
-.main_start_text #start_text_button {
+#main_start_text #start_text_button {
     margin-top: 3em;
     border: none;
     width: 12em;
     height: 4em;
-    color: var(--primary-text-color);
+    color: var(--color4);
     border-radius: 10px;
-    background: var(--primary-color);
+    background: var(--color1);
     transition: 0.5s;
     outline: none;
 
@@ -291,8 +298,8 @@ button:hover {
     letter-spacing: 1px;
 }
 
-.main_start_text #start_text_button:hover {
-    background: var(--primary-color);
+#main_start_text #start_text_button:hover {
+    background: var(--color1);
     filter: brightness(150%);
     width: 12em;
     height: 4em;
@@ -302,16 +309,18 @@ button:hover {
 
 #mainComponent {
     border: 1px solid #000000ce;
+    border-radius: var(--main-container-border-radius-pc);
     display: absolute;
     background-color: white;
     margin: auto;
+    width: var(--main-container-width-pc);
     font-size: 1.7em;
 }
 
 .elementTitle {
     text-align: center;
     font-weight: bold;
-    color: var(--sub-color);
+    color: var(--color1);
     font-size: 2em;
     padding-bottom: 3em;
 
@@ -325,11 +334,11 @@ button:hover {
 .elementTitle:after {
     content: "";
     display: inline-block;
-    width: 2em;
+    width: calc(var(--main-container-width-pc)/3);
     margin: 0 2em 0 -55%;
     vertical-align: middle;
     border-bottom: 3px double;
-    color: var(--sub-color);
+    color: var(--color1);
 }
 
 .elementTitle:after {
@@ -338,9 +347,10 @@ button:hover {
 
 #about_me_section {
     border-bottom: 1px solid #00000059;
+    border-radius: var(--main-container-border-radius-pc) var(--main-container-border-radius-pc) 0 0;
     padding: var(--padding-between-elements) 5em;
     background: linear-gradient(to top left, var(--first-section-color) 0%, var(--second-section-color) 100%);
-    color: var(--primary-text-color);
+    color: var(--color4);
 }
 
 #about_me_info {
@@ -363,13 +373,13 @@ button:hover {
 }
 
 .main_text {
-    color: var(--primary-text-color);
+    color: var(--color4);
     font-size: 1.6em;
     font-weight: 800;
 }
 
 #about_me_sub_info {
-    color: var(--primary-text-color);
+    color: var(--color4);
     font-size: 0.8em;
     padding-left: 1.5em;
     padding-bottom: 2.5em;
@@ -377,7 +387,7 @@ button:hover {
 }
 
 .sub_text {
-    color: var(--primary-text-color);
+    color: var(--color4);
     line-height: 1.8em;
     letter-spacing: 1px;
     font-size: 1em;
@@ -389,7 +399,7 @@ button:hover {
     padding-top: var(--padding-between-elements);
     border-bottom: 1px solid #00000000;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
-    color: var(--primary-text-color);
+    color: var(--color4);
 }
 
 .project {
@@ -460,7 +470,7 @@ button:hover {
 .project_info .utility_button button {
     width: 9em;
     height: 3.5em;
-    color: var(--primary-text-color);
+    color: var(--color4);
     transition: 0.5s;
     border: none;
     border-radius: 5px;
@@ -637,9 +647,10 @@ button:hover {
 }
 
 #contacts_section {
+    border-radius: 0 0 var(--main-container-border-radius-pc) var(--main-container-border-radius-pc);
     padding-top: var(--padding-between-elements);
     background: linear-gradient(to top right, var(--fourth-section-color) 0%, var(--third-section-color) 100%);
-    color: var(--primary-text-color);
+    color: var(--color4);
 }
 
 #contact_description {
@@ -675,7 +686,7 @@ button:hover {
 
 #contact_form .submit_button {
     border: 1.5px solid #000000;
-    color: var(--primary-text-color);
+    color: var(--color4);
     font-family: var(--button-font-family);
 }
 
@@ -704,6 +715,7 @@ button:hover {
     align-items: center;
     vertical-align: middle;
     border: 1px solid var(--contacts-border-color);
+    border-radius: 0 0 var(--main-container-border-radius-pc) 0;
 }
 
 footer {
@@ -758,12 +770,18 @@ footer a {
 
     .elementTitle:before,
     .elementTitle:after {
-        width: 2em;
+        width: calc(var(--main-container-width-mobiles)/4.5);
+    }
+
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-mobile);
+        width: var(--main-container-width-mobiles);
     }
 
     #about_me_section {
         padding: var(--padding-between-elements) 1.5em;
         padding-top: calc(var(--padding-between-elements)/2);
+        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
     }
 
     #photo {
@@ -830,6 +848,10 @@ footer a {
         display: none;
     }
 
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
+    }
+
     #contact_description {
         display: block;
     }
@@ -855,6 +877,7 @@ footer a {
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
     footer {
@@ -900,12 +923,18 @@ footer a {
 
     .elementTitle:before,
     .elementTitle:after {
-        width: 2em;
+        width: calc(var(--main-container-width-mobiles)/4);
+    }
+
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-mobile);
+        width: var(--main-container-width-mobiles);
     }
 
     #about_me_section {
         padding: var(--padding-between-elements) 4em;
         padding-top: calc(var(--padding-between-elements)/2);
+        border-radius: var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile) 0 0;
     }
 
     #photo {
@@ -972,6 +1001,10 @@ footer a {
         display: none;
     }
 
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
+    }
+
     #contact_description {
         display: block;
     }
@@ -997,6 +1030,7 @@ footer a {
         align-items: center;
         vertical-align: middle;
         border: 1px solid var(--contacts-border-color);
+        border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
     footer {
@@ -1034,8 +1068,14 @@ footer a {
         letter-spacing: 2px;
     }
 
+    #mainComponent {
+        border-radius: var(--main-container-border-radius-ipad);
+        width: var(--main-container-width-mobiles);
+    }
+
     #about_me_section {
         padding: var(--padding-between-elements) 2.5em;
+        border-radius: var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad) 0 0;
     }
 
     .about_me_description {
@@ -1087,8 +1127,13 @@ footer a {
         display: none;
     }
 
+    #contacts_section {
+        border-radius: 0 0 var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad);
+    }
+
     #contact_info p {
         padding-bottom: 1px;
+        border-radius: 0 0 var(--main-container-border-radius-ipad) 0;
     }
 
     footer {
