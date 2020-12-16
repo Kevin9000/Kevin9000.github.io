@@ -3,16 +3,15 @@
     /* darkest color */
     --color1: #1d3557;
     /* lighter shade of darkest color */
-    --color2: #457b9d;
+    --color2: #84b7d6;
 
+    /* color used to highlight*/
     --color3: #e63946;
 
     /* primary text color for titles */
-    --color4: #a8dadc;
+    --color4: #96e1e4;
     /* secondary text color for description (has lighter shade) */
     --color5: #f1faee;
-
-    --start-text-sub-title-color: #42AA7A;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
@@ -36,7 +35,6 @@
     --project3-primary-bg: rgb(0, 150, 255);
     --project4-primary-bg: rgb(120, 86, 255);
 
-    --contacts-border-color: #6861617a;
     --contacts-bg-color-focus: #a8a8a8;
 
     /* Description font family */
@@ -115,9 +113,16 @@ button:hover {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-family: var(--element-title-font-family);
     margin-left: 2em;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+#topnav #topnav_symbol:hover{
+    color: var(--color3);
+    font-size: 1.4em;
 }
 
 #element a {
@@ -132,12 +137,12 @@ button:hover {
 
 #element a:hover {
     background-color: var(--color5);
-    color: var(--color4);
+    color: var(--color3);
 }
 
 #element a:active {
-    background-color: var(--color3);
-    color: var(--color4);
+    background-color: var(--color4);
+    color: var(--color3);
 }
 
 #opennavbtn {
@@ -182,7 +187,7 @@ button:hover {
 #sibar_main_text {
     font-size: 0.8em;
     line-height: 25px;
-    color: #7E7E7E;
+    color: var(--color1);
     font-family: var(--titlefont-family);
 }
 
@@ -247,6 +252,7 @@ button:hover {
 
 #main_start_text #start_text_divider {
     border-color: var(--color1);
+    background-color: var(--color1);
     filter: brightness(200%);
     max-width: 3em;
     border-width: 1.5px;
@@ -266,7 +272,7 @@ button:hover {
     border: none;
     width: 12em;
     height: 4em;
-    color: var(--color4);
+    color: var(--color5);
     border-radius: 10px;
     background: var(--color1);
     transition: 0.5s;
@@ -339,6 +345,7 @@ button:hover {
 }
 
 #photo {
+    color: black;
     width: 60em;
     height: 50em;
 }
@@ -363,11 +370,11 @@ button:hover {
 }
 
 #about_me_sub_info {
-    color: var(--color4);
+    color: var(--color5);
     font-size: 0.8em;
     padding-left: 1.5em;
     padding-bottom: 2.5em;
-    filter: brightness(70%);
+    filter: brightness(40%);
 }
 
 #about_me_subtext {
@@ -540,16 +547,16 @@ button:hover {
     background-color: #00000000;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.5s;
     opacity: 0.5;
 }
 
 .show_hide_project_buttons:hover {
-    background-color: #00000036;
+    background-color: #0000003f;
 }
 
 .show_hide_project_buttons:hover span {
-    border-color: #d31a1a;
+    border-color: var(--color3);
 }
 
 .arrow {
@@ -626,7 +633,7 @@ button:hover {
     padding-right: 20px;
     /* the width is given by 50% if the 100% width minus all the paddings added */
     width: calc(calc(50% - 3em) - 20px);
-    border-right: 1px ridge var(--contacts-border-color);
+    border-right: 1px ridge var(--color5);
     padding-bottom: var(--padding-between-elements);
     line-height: 30px;
     font-family: var(--titlefont-family);
@@ -639,7 +646,7 @@ button:hover {
 .form_input {
     width: 80%;
     padding: 20px 20px;
-    border: 3px groove var(--contacts-border-color);
+    border: 3px groove var(--color5);
 }
 
 .form_input:focus {
@@ -647,7 +654,7 @@ button:hover {
 }
 
 #contact_form .submit_button {
-    border: 3px groove var(--contacts-border-color);
+    border: 3px groove var(--color5);
     color: var(--color1);
     font-family: var(--button-font-family);
 }
@@ -672,11 +679,14 @@ button:hover {
 
 #contact_info p {
     padding-left: 2em;
-    height: 49.6%;
+    height: 49.8%;
     display: flex;
     align-items: center;
     vertical-align: middle;
-    border: 1px solid var(--contacts-border-color);
+    border: 1px solid var(--color5);
+}
+
+#contact_info #contact_info_last_element {
     border-radius: 0 0 var(--main-container-border-radius-pc) 0;
 }
 
@@ -837,7 +847,10 @@ footer a {
         height: 100px;
         align-items: center;
         vertical-align: middle;
-        border: 1px solid var(--contacts-border-color);
+        border: 1px solid var(--color5);
+    }
+
+    #contact_info #contact_info_last_element {
         border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
@@ -990,7 +1003,10 @@ footer a {
         height: 100px;
         align-items: center;
         vertical-align: middle;
-        border: 1px solid var(--contacts-border-color);
+        border: 1px solid var(--color5);
+    }
+
+    #contact_info #contact_info_last_element {
         border-radius: 0 0 var(--main-container-border-radius-mobile) var(--main-container-border-radius-mobile);
     }
 
@@ -1094,8 +1110,12 @@ footer a {
 
     #contact_info p {
         padding-bottom: 1px;
+    }
+
+    #contact_info #contact_info_last_element {
         border-radius: 0 0 var(--main-container-border-radius-ipad) 0;
     }
+
 
     footer {
         font-size: 1.2em;
