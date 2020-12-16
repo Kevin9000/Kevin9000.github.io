@@ -4,9 +4,12 @@
     --color1: #8e9aaf;
     /* lighter shade of darkest color */
     --color2: #cbc0d3;
+    
     --color3: #efd3d7;
-    /* primary text color */
+
+    /* primary text color for titles */
     --color4: #feeafa;
+    /* secondary text color for description (has lighter shade) */
     --color5: #dee2ff;
 
     --start-text-sub-title-color: #42AA7A;
@@ -203,47 +206,27 @@ button:hover {
 }
 
 #linkedin {
-    display: inline-block;
     background-color: #0368c7;
-}
-
-#linkedin:hover>a>.sidenav-text {
-    visibility: visible;
-    opacity: 1;
-    font-size: 1.1em;
-    padding: 1.1em 5px 1.1em 1.0em;
 }
 
 #github {
     background-color: #000000;
-    display: inline-block;
-}
-
-#github:hover>a>.sidenav-text {
-    visibility: visible;
-    opacity: 1;
-    font-size: 1.1em;
-    padding: 1.1em 5px 1.1em 1.0em;
 }
 
 #email {
     background-color: #018d06;
-    display: inline-block;
-}
-
-#email:hover>a>.sidenav-text {
-    visibility: visible;
-    opacity: 1;
-    font-size: 1.1em;
-    padding: 1.1em 5px 1.1em 1.0em;
 }
 
 #resume {
     background-color: #646464;
-    display: inline-block;
 }
 
-#resume:hover>a>.sidenav-text {
+.sideBar_container {
+    display: inline-block;
+    border: 1px #00000044 solid;
+}
+
+.sideBar_container:hover>a>.sidenav-text {
     visibility: visible;
     opacity: 1;
     font-size: 1.1em;
@@ -372,10 +355,14 @@ button:hover {
     line-height: 1.5em;
 }
 
-.main_text {
-    color: var(--color4);
+#about_me_maintext {
     font-size: 1.6em;
     font-weight: 800;
+}
+
+.main_text {
+    color: var(--color4);
+    font-family: var(--titlefont-family);
 }
 
 #about_me_sub_info {
@@ -386,12 +373,15 @@ button:hover {
     filter: brightness(70%);
 }
 
-.sub_text {
-    color: var(--color4);
+#about_me_subtext {
     line-height: 1.8em;
     letter-spacing: 1px;
     font-size: 1em;
     font-weight: 300;
+}
+
+.sub_text {
+    color: var(--color4);
     font-family: var(--content-font-family);
 }
 
@@ -422,7 +412,6 @@ button:hover {
 }
 
 .title_project {
-    font-family: var(--titlefont-family);
     font-weight: bold;
     font-size: 1.5em;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
@@ -447,16 +436,13 @@ button:hover {
 .project_info .project_description {
     font-size: 1.1em;
     line-height: 1.8em;
-    font-family: var(--content-font-family);
 }
 
 .description_space {
-    padding-left: 2.5em;
-    padding-top: 1.5em;
+    margin-left: 2.5em;
+    margin-top: 0.8em;
     font-size: 1.0em;
     line-height: 1.5em;
-    opacity: 0.9;
-    font-family: var(--content-font-family);
 }
 
 .project_info .utility_button {
@@ -486,10 +472,6 @@ button:hover {
     text-shadow: var(--text-highlight);
 }
 
-#project1 .title_project {
-    color: var(--project1-primary-bg);
-}
-
 #project1 .technology_used .single_technology_used {
     border-color: var(--project1-primary-bg);
 }
@@ -505,10 +487,6 @@ button:hover {
 
 #project1 button:hover {
     filter: brightness(105%);
-}
-
-#project2 .title_project {
-    color: var(--project2-primary-bg);
 }
 
 #project2 .technology_used .single_technology_used {
@@ -528,10 +506,6 @@ button:hover {
     filter: brightness(105%);
 }
 
-#project3 .title_project {
-    color: var(--project3-primary-bg);
-}
-
 #project3 .technology_used .single_technology_used {
     border-color: var(--project3-primary-bg);
 }
@@ -547,10 +521,6 @@ button:hover {
 
 #project3 button:hover {
     filter: brightness(105%);
-}
-
-#project4 .title_project {
-    color: var(--project4-primary-bg);
 }
 
 #project4 .technology_used .single_technology_used {
@@ -1060,7 +1030,7 @@ footer a {
     }
 
     .sub_text {
-        padding: 0px 50px;
+        padding: 0px 10px;
     }
 
     .elementTitle {
