@@ -393,7 +393,8 @@ button:hover {
 }
 
 .project {
-    padding: 150px 0px;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
     display: grid;
     grid-template-columns: auto auto;
 }
