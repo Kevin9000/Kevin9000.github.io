@@ -30,11 +30,6 @@
 
     --project-text-shadow-length: 5px;
 
-    --project1-primary-bg: rgb(255, 185, 0);
-    --project2-primary-bg: rgb(0, 255, 124);
-    --project3-primary-bg: rgb(0, 150, 255);
-    --project4-primary-bg: rgb(120, 86, 255);
-
     --contacts-bg-color-focus: #a8a8a8;
 
     /* Description font family */
@@ -473,74 +468,6 @@ button:hover {
 .project_info .utility_button button:hover {
     border-radius: 50px;
     text-shadow: var(--text-highlight);
-}
-
-#project1 .technology_used .single_technology_used {
-    border-color: var(--project1-primary-bg);
-}
-
-#project1 .technology_used .single_technology_used span {
-    text-shadow: 1px 1px var(--project1-primary-bg), -1px -1px #444;
-}
-
-#project1 button {
-    background: var(--project1-primary-bg);
-    filter: brightness(70%);
-}
-
-#project1 button:hover {
-    filter: brightness(105%);
-}
-
-#project2 .technology_used .single_technology_used {
-    border-color: var(--project2-primary-bg);
-}
-
-#project2 .technology_used .single_technology_used span {
-    text-shadow: 1px 1px var(--project2-primary-bg), -1px -1px #444;
-}
-
-#project2 button {
-    background: var(--project2-primary-bg);
-    filter: brightness(70%);
-}
-
-#project2 button:hover {
-    filter: brightness(105%);
-}
-
-#project3 .technology_used .single_technology_used {
-    border-color: var(--project3-primary-bg);
-}
-
-#project3 .technology_used .single_technology_used span {
-    text-shadow: 1px 1px var(--project3-primary-bg), -1px -1px #444;
-}
-
-#project3 button {
-    background: var(--project3-primary-bg);
-    filter: brightness(70%);
-}
-
-#project3 button:hover {
-    filter: brightness(105%);
-}
-
-#project4 .technology_used .single_technology_used {
-    border-color: var(--project4-primary-bg);
-}
-
-#project4 .technology_used .single_technology_used span {
-    text-shadow: 1px 1px var(--project4-primary-bg), -1px -1px #444;
-}
-
-#project4 button {
-    background: var(--project4-primary-bg);
-    filter: brightness(70%);
-}
-
-#project4 button:hover {
-    filter: brightness(105%);
 }
 
 .show_hide_project_buttons {
