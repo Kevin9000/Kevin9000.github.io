@@ -98,8 +98,8 @@ button:hover {
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    background-color: var(--color2);
-    border-bottom: 2px var(--color1) solid;
+    background-color: transparent;
+    border-bottom: transparent;
     opacity: 0.95;
     display: block;
     transition: background-color 300ms linear;
@@ -238,9 +238,12 @@ button:hover {
     padding: 1.1em 5px 1.1em 1.0em;
 }
 
-#main_start_text {
+#container {
     padding-top: 30vh;
     padding-bottom: 50vh;
+}
+
+#main_start_text {
     text-align: center;
     font-size: 2em;
 }
@@ -706,16 +709,26 @@ footer a {
 
 /* Mobile phones */
 @media only screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+
     #element {
         display: none;
     }
 
-    #opennavbtn {
-        display: block;
+    #topnav {
+        background-color: var(--color2);
+        border-bottom: 2px var(--color1) solid;
     }
 
-    html {
-        font-size: 8px;
+    #topnav #topnav_symbol{
+        padding: 14px 0px;
+        font-size: 1.2em;
+    }
+
+    #opennavbtn {
+        display: block;
     }
 
     #sibar_main_text {
@@ -729,9 +742,13 @@ footer a {
         padding: 0.7em;
     }
 
-    .main_start_text {
-        margin: 0px 30px;
+    #main_start_text {
+        margin: 0px 2em;
         font-size: 1.7em;
+    }
+
+    #main_start_text #start_text_sub {
+        padding: 0px 18px;
     }
 
     .elementTitle {
@@ -866,6 +883,16 @@ footer a {
         display: none;
     }
 
+    #topnav {
+        background-color: var(--color2);
+        border-bottom: 2px var(--color1) solid;
+    }
+
+    #topnav #topnav_symbol{
+        padding: 14px 0px;
+        font-size: 1.2em;
+    }
+
     #opennavbtn {
         display: block;
     }
@@ -885,8 +912,8 @@ footer a {
         padding: 1.0em;
     }
 
-    .main_start_text {
-        margin: 0px 30px;
+    #main_start_text {
+        padding: 0px 40px;
         font-size: 1.7em;
     }
 

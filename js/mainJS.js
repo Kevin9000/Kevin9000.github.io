@@ -4,11 +4,9 @@ window.onscroll = function (ev) {
         if (window.scrollY == 0) {
             document.getElementById("topnav").style.backgroundColor = "transparent";
             document.getElementById("topnav").style.borderBottom = "transparent";
-            document.getElementById("opennavbtn").style.backgroundColor = "transparent";
         } else {
             document.getElementById("topnav").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--color2");
             document.getElementById("topnav").style.borderBottom = "2px" + getComputedStyle(document.body).getPropertyValue("--color1") + " solid";
-            document.getElementById("opennavbtn").style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--color2");
         }
     }
 }
