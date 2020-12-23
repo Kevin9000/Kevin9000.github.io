@@ -3,7 +3,7 @@
     /* darkest color */
     --color1: #1d3557;
     /* lighter shade of darkest color */
-    --color2: #84b7d6;
+    --color2: #4f82b3;
 
     /* color used to highlight*/
     --color3: #e63946;
@@ -95,7 +95,7 @@ button:hover {
     overflow: hidden;
     background-color: transparent;
     border-bottom: transparent;
-    opacity: 0.95;
+    opacity: 0.90;
     display: block;
     transition: background-color 300ms linear;
     font-size: 1.6em;
@@ -387,23 +387,43 @@ button:hover {
 }
 
 #projects_section {
-    padding-top: var(--padding-between-elements);
+    padding: var(--padding-between-elements) 10em 0px 10em;
     border-bottom: 1px solid #00000000;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
-    color: var(--color4);
 }
 
 .project {
+    padding: 150px 0px;
     display: grid;
     grid-template-columns: auto auto;
-    padding: 100px 70px;
+}
+
+.first_section_project {
+    display: grid;
+    grid-gap: 30px;
 }
 
 .project_img {
     width: 24em;
     height: 17em;
-    margin-top: 1.5em;
-    margin-right: 1.0em;
+}
+
+.list_tech {
+    padding-top: 1em;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1.5rem;
+    color: var(--color5)
+}
+
+.list_tech li i {
+    color: var(--color2)
+}
+
+.utility_link a {
+    text-decoration: none;
+    color: var(--color2)
 }
 
 .second_section_project {
@@ -413,21 +433,12 @@ button:hover {
 }
 
 .project_title_main {
-    color: var(--color1);
-    font-size: 1.6em;
     font-weight: bold;
 }
 
 .project_title_subject {
     color: var(--color1);
     font-size: 1.6em;
-}
-
-.list_technology_used {
-    display: grid;
-    list-style: none;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 1.5rem;
 }
 
 .project_description {
@@ -442,13 +453,17 @@ button:hover {
     line-height: 1.5em;
 }
 
-.utility_link {
-    padding-top: 10px;
+.list_features {
+    padding-top: 1em;
+    display: grid;
+    list-style: none;
+    grid-template-columns: auto;
+    grid-row-gap: 1.5rem;
+    color: var(--color5)
 }
 
-.utility_link a {
-    text-decoration: none;
-    color: var(--color1)
+.list_features li i {
+    color: var(--color2)
 }
 
 .show_hide_project_buttons {
@@ -696,24 +711,19 @@ footer a {
         line-height: 1.3em;
     }
 
+    #projects_section {
+        padding: var(--padding-between-elements) 1em 0px 1em;
+    }
+
     .project {
-        display: block;
-        padding: 40px 30px;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .second_section_project {
         width: 100%;
         margin: 0px;
         padding-left: 0em;
-    }
-
-    .project_img {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        margin-top: 0em;
-        margin-left: 0em;
-        margin-right: 0em;
     }
 
     .tooltiptext {
@@ -838,24 +848,19 @@ footer a {
         line-height: 1.3em;
     }
 
+    #projects_section {
+        padding: var(--padding-between-elements) 2em 0px 2em;
+    }
+
     .project {
-        display: block;
-        padding: 40px 60px;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .second_section_project {
         width: 100%;
         margin: 0px;
         padding-left: 0em;
-    }
-
-    .project_img {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        margin-top: 0em;
-        margin-left: 0em;
-        margin-right: 0em;
     }
 
     .tooltiptext {
@@ -949,13 +954,13 @@ footer a {
         line-height: 1.4em;
     }
 
-    .project_img {
-        display: inline-block;
-        width: 20em;
-        height: 15em;
-        margin-top: 2em;
-        margin-left: 0em;
-        margin-right: 0em;
+    #projects_section {
+        padding: var(--padding-between-elements) 5em 0px 5em;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .second_section_project {
