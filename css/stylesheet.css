@@ -10,8 +10,8 @@
 
     /* primary text color for titles */
     --color4: #96e1e4;
-    /* secondary text color for description (has lighter shade) */
-    --color5: #4d4d4d;
+    /* secondary text color for description (has darker shade) */
+    --color5: #636363;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
@@ -270,7 +270,7 @@ button:hover {
     border: none;
     width: 12em;
     height: 4em;
-    color: var(--color5);
+    color: white;
     border-radius: 10px;
     background: var(--color1);
     transition: 0.5s;
@@ -348,10 +348,9 @@ button:hover {
     height: 50em;
 }
 
-.about_me_description {
+#about_me_description {
     width: 100%;
-    padding-left: 80px;
-    padding-top: 30px;
+    padding: 40px 60px;
     font-size: 1.1em;
     line-height: 1.5em;
 }
@@ -365,6 +364,10 @@ button:hover {
     font-family: var(--titlefont-family);
     font-weight: bold;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.589);
+}
+
+.highlighted-text {
+    color: var(--color3);
 }
 
 #about_me_sub_info {
@@ -706,9 +709,8 @@ footer a {
         padding: 20px 0em;
     }
 
-    .about_me_description {
+    #about_me_description {
         padding-left: 0px;
-        padding-top: 0px;
         font-size: 1.0em;
         line-height: 1.3em;
     }
@@ -842,9 +844,8 @@ footer a {
         padding: 20px 0em;
     }
 
-    .about_me_description {
-        padding-left: 0px;
-        padding-top: 0px;
+    #about_me_description {
+        padding: 0px;
         font-size: 1.0em;
         line-height: 1.3em;
     }
@@ -947,9 +948,9 @@ footer a {
         border-radius: var(--main-container-border-radius-ipad) var(--main-container-border-radius-ipad) 0 0;
     }
 
-    .about_me_description {
-        padding-left: 20px;
-        padding-top: 15px;
+    #about_me_description {
+        width: 100%;
+        padding: 15px 20px;
         font-size: 1.1em;
         line-height: 1.4em;
     }
