@@ -11,7 +11,7 @@
     /* primary text color for titles */
     --color4: #96e1e4;
     /* secondary text color for description (has lighter shade) */
-    --color5: #f1faee;
+    --color5: #4d4d4d;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
@@ -23,10 +23,10 @@
     --main-container-width-mobiles: 85%;
     --padding-between-elements: 100px;
 
-    --first-section-color: var(--color1);
+    --first-section-color: var(--color2);
     --second-section-color: white;
     --third-section-color: white;
-    --fourth-section-color: var(--color1);
+    --fourth-section-color: var(--color2);
 
     --project-text-shadow-length: 5px;
 
@@ -397,15 +397,11 @@ button:hover {
     padding-bottom: 20vh;
     display: grid;
     grid-template-columns: auto auto;
-}
-
-.first_section_project {
-    display: grid;
-    grid-gap: 30px;
+    grid-gap: 5em;
 }
 
 .project_img {
-    width: 24em;
+    width: 26em;
     height: 17em;
 }
 
@@ -427,31 +423,36 @@ button:hover {
     color: var(--color2)
 }
 
+.utility_link a:hover {
+    color: var(--color3)
+}
+
 .second_section_project {
     width: 100%;
     margin: 0px;
-    padding-left: 4em;
+    display: grid;
+    grid-row-gap: 2.5em;
 }
 
 .project_title_main {
-    font-weight: bold;
+    margin-bottom: 1em;
+    font-weight: bolder;
 }
 
 .project_title_subject {
     color: var(--color1);
-    font-size: 1.6em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.project_description {
-    font-size: 1.1em;
-    line-height: 1.8em;
+.project_title_tech {
+    margin-top: 2em;
 }
 
-.description_space {
-    margin-left: 2.5em;
-    margin-top: 0.8em;
+.project_info_text {
     font-size: 1.0em;
     line-height: 1.5em;
+    color: var(--color5)
 }
 
 .list_features {
@@ -724,7 +725,6 @@ footer a {
     .second_section_project {
         width: 100%;
         margin: 0px;
-        padding-left: 0em;
     }
 
     .tooltiptext {
@@ -861,7 +861,6 @@ footer a {
     .second_section_project {
         width: 100%;
         margin: 0px;
-        padding-left: 0em;
     }
 
     .tooltiptext {
@@ -967,7 +966,6 @@ footer a {
     .second_section_project {
         width: 100%;
         margin: 0px;
-        padding-left: 2em;
     }
 
     .tooltiptext {
