@@ -1,17 +1,18 @@
 /*get a divider between project*/
+/* fix responsive */
 :root {
     /* darkest color */
-    --color1: #1d3557;
+    --color1: #1f3c66;
     /* lighter shade of darkest color */
     --color2: #4f82b3;
 
     /* color used to highlight*/
-    --color3: #e63946;
+    --color3: #b91220;
 
     /* primary text color for titles */
-    --color4: #96e1e4;
+    --color4: #7adfe2;
     /* secondary text color for description (has darker shade) */
-    --color5: #636363;
+    --color5: #3b3b3b;
 
     --text-highlight: 0px 0px var(--project-text-shadow-length) rgba(255, 255, 255, 0.7);
 
@@ -448,14 +449,14 @@ button:hover {
     margin-bottom: 0.5em;
 }
 
-.project_title_tech {
-    margin-top: 2em;
-}
-
 .project_info_text {
     font-size: 1.0em;
     line-height: 1.5em;
     color: var(--color5)
+}
+
+.project_title_tech {
+    margin-top: 2em;
 }
 
 .list_features {
@@ -716,12 +717,25 @@ footer a {
     }
 
     #projects_section {
-        padding: var(--padding-between-elements) 1em 0px 1em;
+        padding: var(--padding-between-elements) 2em 0px 2em;
     }
 
     .project {
-        display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto ;
+    }
+    
+    .project_img {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .project_title_subject {
+        font-size: 1.3em;
+    }
+    
+    .project_info_text {
+        font-size: 0.9em;
+        line-height: 1.5em;
     }
 
     .second_section_project {
@@ -956,12 +970,25 @@ footer a {
     }
 
     #projects_section {
-        padding: var(--padding-between-elements) 5em 0px 5em;
+        padding: var(--padding-between-elements) 4em 0px 4em;
     }
 
     .project {
-        display: grid;
-        grid-template-columns: auto auto;
+        grid-gap: 3em;
+    }
+    
+    .project_img {
+        width: 21em;
+        height: 15em;
+    }
+
+    .project_title_subject {
+        font-size: 1.3em;
+    }
+    
+    .project_info_text {
+        font-size: 0.9em;
+        line-height: 1.5em;
     }
 
     .second_section_project {
