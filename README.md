@@ -1,6 +1,6 @@
 # Kevin Wang's Portfolio
 ![]() <br />
-A Web page (portfolio) that has the job to show off my main projects.
+A Web page (Portfolio) that has the job to show off my main projects over the course of my IT experience.
 
 ## Table of Contents
 * [About The Project](#about-the-project)  <br />
