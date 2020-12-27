@@ -10,7 +10,7 @@
     --color3: #b91220;
 
     /* primary text color for titles */
-    --color4: #7adfe2;
+    --color4: #7eccbf;
     /* secondary text color for description (has darker shade) */
     --color5: #3b3b3b;
 
@@ -132,12 +132,12 @@ button:hover {
 }
 
 #element a:hover {
-    background-color: var(--color5);
+    background-color: var(--color4);
     color: var(--color3);
 }
 
 #element a:active {
-    background-color: var(--color4);
+    background-color: var(--color5);
     color: var(--color3);
 }
 
