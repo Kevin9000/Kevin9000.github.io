@@ -397,16 +397,14 @@ button:hover {
 }
 
 .project {
-    padding-top: 10vh;
-    padding-bottom: 20vh;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5em;
 }
 
 .project_img {
-    width: 26em;
-    height: 17em;
+    width: 21vw;
+    height: 26vh;
 }
 
 .list_tech {
@@ -730,11 +728,11 @@ footer a {
     }
 
     .project_title_subject {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     
     .project_info_text {
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 1.5em;
     }
 
@@ -869,8 +867,22 @@ footer a {
     }
 
     .project {
-        display: grid;
         grid-template-columns: auto auto;
+        grid-gap: 1.5em;
+    }
+    
+    .project_img {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    .project_title_subject {
+        font-size: 1.5em;
+    }
+    
+    .project_info_text {
+        font-size: 1em;
+        line-height: 1.5em;
     }
 
     .second_section_project {
@@ -978,16 +990,16 @@ footer a {
     }
     
     .project_img {
-        width: 21em;
-        height: 15em;
+        width: 40vw;
+        height: 25vh;
     }
 
     .project_title_subject {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     
     .project_info_text {
-        font-size: 0.9em;
+        font-size: 1.1em;
         line-height: 1.5em;
     }
 
