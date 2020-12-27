@@ -44,7 +44,9 @@ function showHiddenProject() {
   document.getElementById("show_more_project_button").style.marginTop = "0px";
   document.getElementById("hide_project_button").style.visibility = "visible";
   document.getElementById("hide_project_button").style.display = "block";
-  document.getElementById("hide_project_button").style.marginTop = "50px"; // add extra max height in case the div gets cut
+  document.getElementById("hide_project_button").style.marginTop = "50px";
+  document.querySelector(".hidden_divider").style.margin = "15vh 0px 20vh 0px";
+  document.querySelector(".hidden_divider").style.opacity = "0.3"; // add extra max height in case the div gets cut
 
   document.querySelector(".hidden_project").style.maxHeight = document.querySelector(".hidden_project").scrollHeight + 500 + "px";
   document.querySelector(".hidden_project").style.padding = window.getComputedStyle(document.querySelector(".project")).padding;
@@ -56,6 +58,8 @@ function hideHiddenProject() {
   document.getElementById("hide_project_button").style.visibility = "hidden";
   document.getElementById("hide_project_button").style.display = "none";
   document.getElementById("hide_project_button").style.marginTop = "0px";
+  document.querySelector(".hidden_divider").style.margin = "0vh 0px 0vh 0px";
+  document.querySelector(".hidden_divider").style.opacity = "0";
   document.querySelector(".hidden_project").style.maxHeight = "0px";
   document.querySelector(".hidden_project").style.padding = "0px 0px";
 }

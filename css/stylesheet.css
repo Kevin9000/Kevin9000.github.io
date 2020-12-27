@@ -318,7 +318,7 @@ button:hover {
 .elementTitle:after {
     content: "";
     display: inline-block;
-    width: calc(var(--main-container-width-pc)/3);
+    width: calc(var(--main-container-width-pc)/2.5);
     margin: 0 2em 0 -55%;
     vertical-align: middle;
     border-bottom: 3px double;
@@ -332,7 +332,7 @@ button:hover {
 #about_me_section {
     border-bottom: 1px solid #00000059;
     border-radius: var(--main-container-border-radius-pc) var(--main-container-border-radius-pc) 0 0;
-    padding: var(--padding-between-elements) 5em;
+    padding: var(--padding-between-elements) 10em;
     background: linear-gradient(to top left, var(--first-section-color) 0%, var(--second-section-color) 100%);
     color: var(--color4);
 }
@@ -390,13 +390,22 @@ button:hover {
     font-family: var(--content-font-family);
 }
 
+
 #projects_section {
     padding: var(--padding-between-elements) 10em 0px 10em;
     border-bottom: 1px solid #00000000;
     background: linear-gradient(to bottom left, var(--first-section-color) 0%, var(--third-section-color) 100%);
 }
 
+.visible_divider{
+    margin: 15vh 0px 20vh 0px;
+    border: none;
+    opacity: 0.3;
+    border-bottom: 1px solid var(--color1);
+}
+
 .project {
+    padding: 0px 12em 0px 5em;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5em;
@@ -537,6 +546,13 @@ button:hover {
     margin-top: 0px;
     visibility: hidden;
     display: none;
+}
+
+.hidden_divider {
+    margin: 0vh 0px 0vh 0px;
+    border: none;
+    opacity: 0;
+    border-bottom: 1px solid var(--color1);
 }
 
 .hidden_project {
@@ -719,6 +735,7 @@ footer a {
     }
 
     .project {
+        padding: 0px;
         grid-template-columns: auto ;
     }
     
@@ -867,6 +884,7 @@ footer a {
     }
 
     .project {
+        padding: 0px;
         grid-template-columns: auto auto;
         grid-gap: 1.5em;
     }
@@ -986,6 +1004,7 @@ footer a {
     }
 
     .project {
+        padding: 0px;
         grid-gap: 3em;
     }
     
@@ -1031,8 +1050,8 @@ footer a {
     }
 }
 
-/* PCs */
-@media only screen and (min-width: 1200px) {
+/* PCs small screen */
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
     #subNavBar {
         height: 0;
     }
@@ -1043,5 +1062,18 @@ footer a {
 
     html {
         font-size: 10px;
+    }
+
+    #about_me_section {
+        padding: var(--padding-between-elements) 5em;
+    }
+
+    .project {
+        padding: 0px 0em 0px 0em;
+    }
+    
+    .project_img {
+        width: 30vw;
+        height: 26vh;
     }
 }
