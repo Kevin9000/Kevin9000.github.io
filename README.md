@@ -11,10 +11,11 @@ A Web page (Portfolio) that has the job to show off my main projects over the co
 
 ## About The Project
 Features:
-  - Designed and developed a website with the purpose to show off my projects to the public.
+  - Designed and developed a website with the purpose to show off my main projects to the public.
   - Styled every element of the page to greatly improve the UI.
   - Made use of media query to make the page responsive, so that all type of devices could enjoy the page.
   - Increased the loading speed of the page by replacing all gifs with a lighter format.
+  - Responsive
 
 ## Technologies
 * HTML5 & CSS
