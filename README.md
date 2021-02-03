@@ -1,5 +1,5 @@
 # Kevin Wang's Portfolio
-![https://github.com/Wang-Kevin900/Utilities/blob/master/Projects_gif/MyPortfolio.gif]() <br />
+![](https://github.com/Wang-Kevin900/Utilities/blob/master/Projects_gif/MyPortfolio.gif) <br />
 A Web page (Portfolio) that has the job to show off my main projects over the course of my IT experience.
 
 ## Table of Contents
